@@ -13,8 +13,8 @@ position: 1
 Création du point d'entrée vers la nouvelle page. Il est impératif que la page d'accueil actuelle ne soit pas modifiée ou cassée par cet ajout.
 
 ## Checklist
-- [ ] Ajouter un bouton distinctif (style "Appel à l'action" avec un accent Édition Spéciale) dans l'en-tête de navigation existant
-- [ ] Créer la structure de base de la nouvelle page dédiée à Los Angeles 2028
+- [x] Ajouter un bouton distinctif (style "Appel à l'action" avec un accent Édition Spéciale) dans l'en-tête de navigation existant
+- [x] Créer la structure de base de la nouvelle page dédiée à Los Angeles 2028
 - [ ] Vérifier que le bouton mène correctement vers la nouvelle page et que l'accueil reste inchangé
 
 ## Acceptance

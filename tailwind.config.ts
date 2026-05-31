@@ -45,6 +45,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        "olympic-gold": {
+          DEFAULT: "hsl(var(--olympic-gold))",
+          foreground: "hsl(var(--olympic-gold-foreground))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,5 +1,6 @@
 import { Phone, Mail, Globe, Facebook, Instagram, Music } from "lucide-react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,6 +39,14 @@ export function Header() {
               </p>
             </div>
           </div>
+
+          <Link 
+            href="/los-angeles-2028"
+            className="hidden lg:flex items-center gap-2 px-4 py-2 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-md hover:shadow-lg hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105 border-2 border-olympic-gold/20"
+          >
+            <span>🏹</span>
+            <span>Projet LA 2028</span>
+          </Link>
 
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-xs md:text-sm">
             <a
