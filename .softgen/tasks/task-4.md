@@ -1,6 +1,6 @@
 ---
 title: Intégration API World Archery
-status: in_progress
+status: done
 priority: high
 type: feature
 tags:
