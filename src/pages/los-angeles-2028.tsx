@@ -176,9 +176,9 @@ export default function LosAngeles2028({ athletes }: PageProps) {
 
                           <div className="grid gap-3">
                             {athlete.worldRanking && (
-                              <div className="flex items-center justify-between p-3 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30">
-                                <span className="text-sm font-medium text-foreground">Classement Mondial</span>
-                                <span className="font-bold text-lg text-olympic-gold">#{athlete.worldRanking}</span>
+                              <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30">
+                                <span className="font-bold text-3xl text-foreground">#{athlete.worldRanking}</span>
+                                <span className="text-sm text-muted-foreground italic mt-1">Classement Mondial</span>
                               </div>
                             )}
                             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
