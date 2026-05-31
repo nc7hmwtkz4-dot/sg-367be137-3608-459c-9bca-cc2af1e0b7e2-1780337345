@@ -98,13 +98,21 @@ export default function LosAngeles2028() {
                   <div className="w-full lg:w-2/5">
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-olympic-gold/20 group hover:border-olympic-gold/40 transition-all duration-500">
                       <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/20 to-transparent"></div>
-                      <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
-                        <div className="text-center space-y-3">
-                          <div className="text-6xl">{athlete.flag}</div>
-                          <p className="text-2xl font-bold text-foreground">{athlete.name}</p>
-                          <p className="text-sm text-muted-foreground uppercase tracking-widest">[Photo de profil]</p>
+                      {athlete.profileImage ? (
+                        <img 
+                          src={athlete.profileImage} 
+                          alt={athlete.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
+                          <div className="text-center space-y-3">
+                            <div className="text-6xl">{athlete.flag}</div>
+                            <p className="text-2xl font-bold text-foreground">{athlete.name}</p>
+                            <p className="text-sm text-muted-foreground uppercase tracking-widest">[Photo de profil]</p>
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </div>
 
@@ -112,11 +120,19 @@ export default function LosAngeles2028() {
                   <div className="w-full lg:w-3/5">
                     <div className="relative rounded-2xl overflow-hidden border-2 border-olympic-gold/20 bg-card shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-olympic-gold/40">
                       {/* Image d'action en filigrane */}
-                      <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                      <div className="absolute inset-0 opacity-[0.08] group-hover:opacity-[0.12] transition-opacity duration-500">
                         <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/30 via-transparent to-transparent"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <Target className="w-64 h-64 text-olympic-gold rotate-12" />
-                        </div>
+                        {athlete.actionImage ? (
+                          <img 
+                            src={athlete.actionImage} 
+                            alt={`${athlete.name} en action`}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <Target className="w-64 h-64 text-olympic-gold rotate-12" />
+                          </div>
+                        )}
                       </div>
 
                       {/* Contenu */}
