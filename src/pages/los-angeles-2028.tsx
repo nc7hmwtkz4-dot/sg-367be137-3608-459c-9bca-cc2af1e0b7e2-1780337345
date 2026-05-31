@@ -4,7 +4,7 @@ import { ArrowRight, Target, Trophy, Medal } from "lucide-react";
 import Link from "next/link";
 
 const athletes = [
-{ name: "Baptiste Addis", country: "FRA", flag: "🇫🇷" },
+{ name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
 { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷" },
 { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷" },
 { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷" },
