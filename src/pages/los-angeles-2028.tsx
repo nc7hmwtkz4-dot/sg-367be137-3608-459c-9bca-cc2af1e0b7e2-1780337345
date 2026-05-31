@@ -1,84 +1,101 @@
 import { Header } from "@/components/Header";
 import { SEO } from "@/components/SEO";
-import { ArrowRight, Target, Trophy, Medal } from "lucide-react";
+import { ArrowRight, Target, Trophy } from "lucide-react";
 import Link from "next/link";
+import { GetStaticProps } from "next";
 
-const athletes = [
-{ name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
-{ name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷" },
-{ name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷" },
-{ name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷" },
-{ name: "Athlète FR 5", country: "FRA", flag: "🇫🇷" },
-{ name: "Franck Eyeni", country: "CIV", flag: "🇨🇮" },
-{ name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
-{ name: "Thomas Aubert", country: "SUI", flag: "🇨🇭" }];
+interface Athlete {
+  name: string;
+  country: string;
+  flag: string;
+  waId?: number;
+  profileImage?: string;
+  actionImage?: string;
+  stats?: {
+    discipline?: string;
+    competitions?: string;
+    bestScore?: string;
+    ranking?: string;
+  };
+  worldRanking?: number | null;
+}
 
+const athletesData: Athlete[] = [
+  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32836, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
+  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷" },
+  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6131 },
+  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷" },
+  { name: "Athlète FR 5", country: "FRA", flag: "🇫🇷" },
+  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮" },
+  { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
+  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭" }
+];
 
-export default function LosAngeles2028() {
+export const getStaticProps: GetStaticProps = async () => {
+  const athletesWithRankings = await Promise.all(
+    athletesData.map(async (athlete) => {
+      if (!athlete.waId) {
+        return { ...athlete, worldRanking: null };
+      }
+
+      try {
+        const response = await fetch(
+          `https://api.worldarchery.org/v3/ATHLETEBIOGRAPHY/?Id=${athlete.waId}`
+        );
+
+        if (!response.ok) {
+          console.error(`API error for ${athlete.name}: ${response.status}`);
+          return { ...athlete, worldRanking: null };
+        }
+
+        const data = await response.json();
+        const ranking = data?.items?.[0]?.WorldRankings?.Current?.[0]?.Rnk || null;
+
+        return { ...athlete, worldRanking: ranking };
+      } catch (error) {
+        console.error(`Error fetching ranking for ${athlete.name}:`, error);
+        return { ...athlete, worldRanking: null };
+      }
+    })
+  );
+
+  return {
+    props: {
+      athletes: athletesWithRankings
+    },
+    revalidate: 86400
+  };
+};
+
+interface PageProps {
+  athletes: Athlete[];
+}
+
+export default function LosAngeles2028({ athletes }: PageProps) {
   return (
     <>
       <SEO
         title="Projet Los Angeles 2028 - Arc Club de Nîmes"
-        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028." />
-      
+        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028."
+      />
+
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background via-background to-olympic-gold/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-olympic-gold/10 via-transparent to-transparent"></div>
-        
+
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            
-
-
-            
-            
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight fade-in">
               Projet{" "}
               <span className="bg-gradient-to-r from-olympic-gold via-olympic-gold to-amber-600 bg-clip-text text-transparent">
                 Los Angeles 2028
               </span>
             </h1>
-            
-            
-
-            
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
           </div>
         </div>
-        
+
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-olympic-gold/50 to-transparent"></div>
       </section>
 
@@ -92,15 +109,15 @@ export default function LosAngeles2028() {
               return (
                 <div
                   key={index}
-                  className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}>
-                  
+                  className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 lg:gap-12 items-center`}
+                >
                   {/* Photo de profil */}
                   <div className="w-full lg:w-2/5">
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-olympic-gold/20 group hover:border-olympic-gold/40 transition-all duration-500">
                       <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/20 to-transparent"></div>
                       {athlete.profileImage ? (
-                        <img 
-                          src={athlete.profileImage} 
+                        <img
+                          src={athlete.profileImage}
                           alt={athlete.name}
                           className="w-full h-full object-cover"
                         />
@@ -109,7 +126,9 @@ export default function LosAngeles2028() {
                           <div className="text-center space-y-3">
                             <div className="text-6xl">{athlete.flag}</div>
                             <p className="text-2xl font-bold text-foreground">{athlete.name}</p>
-                            <p className="text-sm text-muted-foreground uppercase tracking-widest">[Photo de profil]</p>
+                            <p className="text-sm text-muted-foreground uppercase tracking-widest">
+                              [Photo de profil]
+                            </p>
                           </div>
                         </div>
                       )}
@@ -123,8 +142,8 @@ export default function LosAngeles2028() {
                       <div className="absolute inset-0 opacity-[0.08] group-hover:opacity-[0.12] transition-opacity duration-500">
                         <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/30 via-transparent to-transparent"></div>
                         {athlete.actionImage ? (
-                          <img 
-                            src={athlete.actionImage} 
+                          <img
+                            src={athlete.actionImage}
                             alt={`${athlete.name} en action`}
                             className="w-full h-full object-cover"
                           />
@@ -141,7 +160,9 @@ export default function LosAngeles2028() {
                           <div className="text-5xl">{athlete.flag}</div>
                           <div>
                             <h3 className="text-3xl font-bold text-foreground">{athlete.name}</h3>
-                            <p className="text-sm text-muted-foreground uppercase tracking-wide">{athlete.country}</p>
+                            <p className="text-sm text-muted-foreground uppercase tracking-wide">
+                              {athlete.country}
+                            </p>
                           </div>
                         </div>
 
@@ -152,8 +173,14 @@ export default function LosAngeles2028() {
                             <Trophy className="w-5 h-5 text-olympic-gold" />
                             Palmarès et Statistiques
                           </h4>
-                          
+
                           <div className="grid gap-3">
+                            {athlete.worldRanking && (
+                              <div className="flex items-center justify-between p-3 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30">
+                                <span className="text-sm font-medium text-foreground">Classement Mondial</span>
+                                <span className="font-bold text-lg text-olympic-gold">#{athlete.worldRanking}</span>
+                              </div>
+                            )}
                             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                               <span className="text-sm text-muted-foreground">Classement National</span>
                               <span className="font-semibold text-foreground">[À compléter]</span>
@@ -184,8 +211,8 @@ export default function LosAngeles2028() {
                       </div>
                     </div>
                   </div>
-                </div>);
-
+                </div>
+              );
             })}
           </div>
         </div>
@@ -202,13 +229,13 @@ export default function LosAngeles2028() {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105">
-            
+            className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105"
+          >
             Retour à l'accueil
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
-    </>);
-
+    </>
+  );
 }
