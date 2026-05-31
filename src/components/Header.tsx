@@ -1,13 +1,16 @@
 import { Phone, Mail, Globe, Facebook, Instagram, Music } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter();
+  const isOnLA2028 = router.pathname === "/los-angeles-2028";
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -41,11 +44,14 @@ export function Header() {
           </div>
 
           <Link 
-            href="/los-angeles-2028"
-            className="hidden lg:flex items-center gap-2 px-4 py-2 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-md hover:shadow-lg hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105 border-2 border-olympic-gold/20"
+            href={isOnLA2028 ? "/" : "/los-angeles-2028"}
+            className="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium text-foreground/70 hover:text-olympic-gold transition-colors duration-300 relative group/link"
           >
-            <span>🏹</span>
-            <span>Projet LA 2028</span>
+            <span className="relative">
+              {isOnLA2028 ? "Découvrez le club" : "Projet LA 2028"}
+              <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-olympic-gold transition-all duration-300 group-hover/link:w-full"></span>
+            </span>
+            <span className="text-olympic-gold opacity-0 group-hover/link:opacity-100 transition-opacity duration-300">→</span>
           </Link>
 
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-xs md:text-sm">
