@@ -4,23 +4,23 @@ import { ArrowRight, Target, Trophy, Medal } from "lucide-react";
 import Link from "next/link";
 
 const athletes = [
-  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷" },
-  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷" },
-  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷" },
-  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷" },
-  { name: "Athlète FR 5", country: "FRA", flag: "🇫🇷" },
-  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮" },
-  { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
-  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭" },
-];
+{ name: "Baptiste Addis", country: "FRA", flag: "🇫🇷" },
+{ name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷" },
+{ name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷" },
+{ name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷" },
+{ name: "Athlète FR 5", country: "FRA", flag: "🇫🇷" },
+{ name: "Franck Eyeni", country: "CIV", flag: "🇨🇮" },
+{ name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
+{ name: "Thomas Aubert", country: "SUI", flag: "🇨🇭" }];
+
 
 export default function LosAngeles2028() {
   return (
     <>
-      <SEO 
+      <SEO
         title="Projet Los Angeles 2028 - Arc Club de Nîmes"
-        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028."
-      />
+        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028." />
+      
       <Header />
       
       {/* Hero Section */}
@@ -29,10 +29,10 @@ export default function LosAngeles2028() {
         
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-6 py-2 bg-olympic-gold/10 border-2 border-olympic-gold/30 rounded-full mb-6 backdrop-blur-sm">
-              <Target className="w-5 h-5 text-olympic-gold" />
-              <span className="text-sm font-semibold text-olympic-gold tracking-wide uppercase">Édition Spéciale</span>
-            </div>
+            
+
+
+            
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight fade-in">
               Projet{" "}
@@ -41,41 +41,41 @@ export default function LosAngeles2028() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed fade-in fade-in-delay-1">
-              8 archers d'exception. 3 nations. 1 objectif : briller aux Jeux Olympiques de Los Angeles 2028.
-            </p>
             
-            <div className="flex flex-wrap items-center justify-center gap-8 pt-6 fade-in fade-in-delay-2">
-              <div className="flex items-center gap-3">
-                <div className="p-3 bg-olympic-gold/10 rounded-lg border border-olympic-gold/20">
-                  <Trophy className="w-6 h-6 text-olympic-gold" />
-                </div>
-                <div className="text-left">
-                  <p className="text-3xl font-bold text-foreground">8</p>
-                  <p className="text-sm text-muted-foreground">Athlètes</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="p-3 bg-olympic-gold/10 rounded-lg border border-olympic-gold/20">
-                  <Medal className="w-6 h-6 text-olympic-gold" />
-                </div>
-                <div className="text-left">
-                  <p className="text-3xl font-bold text-foreground">3</p>
-                  <p className="text-sm text-muted-foreground">Nations</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="p-3 bg-olympic-gold/10 rounded-lg border border-olympic-gold/20">
-                  <Target className="w-6 h-6 text-olympic-gold" />
-                </div>
-                <div className="text-left">
-                  <p className="text-3xl font-bold text-foreground">2028</p>
-                  <p className="text-sm text-muted-foreground">Los Angeles</p>
-                </div>
-              </div>
-            </div>
+
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
           </div>
         </div>
         
@@ -88,12 +88,12 @@ export default function LosAngeles2028() {
           <div className="space-y-24">
             {athletes.map((athlete, index) => {
               const isEven = index % 2 === 0;
-              
+
               return (
-                <div 
+                <div
                   key={index}
-                  className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
-                >
+                  className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}>
+                  
                   {/* Photo de profil */}
                   <div className="w-full lg:w-2/5">
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-olympic-gold/20 group hover:border-olympic-gold/40 transition-all duration-500">
@@ -168,8 +168,8 @@ export default function LosAngeles2028() {
                       </div>
                     </div>
                   </div>
-                </div>
-              );
+                </div>);
+
             })}
           </div>
         </div>
@@ -186,13 +186,13 @@ export default function LosAngeles2028() {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105"
-          >
+            className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105">
+            
             Retour à l'accueil
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 }
