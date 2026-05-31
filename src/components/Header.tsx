@@ -45,13 +45,13 @@ export function Header() {
 
           <Link 
             href={isOnLA2028 ? "/" : "/los-angeles-2028"}
-            className="hidden lg:inline-flex items-center gap-1.5 text-sm font-medium text-foreground/70 hover:text-olympic-gold transition-colors duration-300 relative group/link"
+            className="hidden lg:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-foreground border border-olympic-gold/30 rounded-full hover:border-olympic-gold/60 hover:bg-olympic-gold/5 transition-all duration-300 relative group/link shadow-sm"
           >
+            <span className="text-olympic-gold text-xs">●</span>
             <span className="relative">
               {isOnLA2028 ? "Découvrez le club" : "Projet LA 2028"}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-olympic-gold transition-all duration-300 group-hover/link:w-full"></span>
             </span>
-            <span className="text-olympic-gold opacity-0 group-hover/link:opacity-100 transition-opacity duration-300">→</span>
+            <span className="text-olympic-gold opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 text-xs">→</span>
           </Link>
 
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-xs md:text-sm">
