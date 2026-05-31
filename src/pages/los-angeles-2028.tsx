@@ -21,14 +21,14 @@ interface Athlete {
 }
 
 const athletesData: Athlete[] = [
-  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32836, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
-  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷" },
-  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6131 },
-  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷" },
-  { name: "Athlète FR 5", country: "FRA", flag: "🇫🇷" },
-  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮" },
+  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
+  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419 },
+  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403 },
+  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935 },
+  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974 },
+  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443 },
   { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
-  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭" }
+  { name: "Athlète FR 5", country: "FRA", flag: "🇫🇷" }
 ];
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
       try {
         const response = await fetch(
-          `https://api.worldarchery.org/v3/ATHLETEBIOGRAPHY/?Id=${athlete.waId}`
+          `https://api.worldarchery.org/v3/WORLDRANKINGS/?Id=${athlete.waId}`
         );
 
         if (!response.ok) {
@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async () => {
         }
 
         const data = await response.json();
-        const ranking = data?.items?.[0]?.WorldRankings?.Current?.[0]?.Rnk || null;
+        const ranking = data?.items?.[0]?.Rank || null;
 
         return { ...athlete, worldRanking: ranking };
       } catch (error) {
