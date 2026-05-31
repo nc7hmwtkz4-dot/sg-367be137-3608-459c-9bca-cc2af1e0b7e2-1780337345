@@ -1,6 +1,6 @@
 ---
 title: Hero Section Édition Spéciale LA 2028
-status: in_progress
+status: done
 priority: medium
 type: feature
 tags: [hero, design]

@@ -1,6 +1,6 @@
 ---
 title: Liste Alternée des 8 Athlètes
-status: in_progress
+status: done
 priority: high
 type: feature
 tags: [athletes, layout]

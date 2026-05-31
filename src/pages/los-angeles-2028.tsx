@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { SEO } from "@/components/SEO";
 import { ArrowRight, Target, Trophy, Medal } from "lucide-react";
+import Link from "next/link";
 
 const athletes = [
   { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷" },
@@ -183,13 +184,13 @@ export default function LosAngeles2028() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Rejoignez-nous dans cette aventure olympique et aidez nos athlètes à atteindre leur rêve.
           </p>
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105"
           >
             Retour à l'accueil
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </section>
     </>
