@@ -24,7 +24,7 @@ interface Athlete {
 const athletesData: Athlete[] = [
   { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
   { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419 },
-  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/R3X_9396.jpg", actionImage: "/B16_7739.jpg", stats: { discipline: "Arc Classique", competitions: "15 compétitions internationales", bestScore: "692/720", ranking: "Top 10 France" }, bio: "Champion aguerri avec plus de 15 ans d'expérience au plus haut niveau. Médaillé national et compétiteur redoutable sur la scène internationale." },
+  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", competitions: "15 compétitions internationales", bestScore: "692/720", ranking: "Top 10 France" }, bio: "Champion aguerri avec plus de 15 ans d'expérience au plus haut niveau. Médaillé national et compétiteur redoutable sur la scène internationale." },
   { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935 },
   { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974 },
   { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443 },
