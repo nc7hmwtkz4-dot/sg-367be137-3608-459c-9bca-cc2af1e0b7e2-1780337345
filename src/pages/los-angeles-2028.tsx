@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async () => {
         }
 
         const data = await response.json();
-        const ranking = data?.items?.[0]?.Rank || null;
+        const ranking = data?.items?.[0]?.Rnk || null;
 
         return { ...athlete, worldRanking: ranking };
       } catch (error) {
