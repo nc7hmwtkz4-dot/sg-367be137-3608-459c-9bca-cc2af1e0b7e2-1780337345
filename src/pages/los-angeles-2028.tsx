@@ -158,12 +158,18 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                       <div className="relative z-10 p-8 lg:p-10 space-y-6">
                         <div className="flex items-center gap-4">
                           <div className="text-5xl">{athlete.flag}</div>
-                          <div>
+                          <div className="flex-1">
                             <h3 className="text-3xl font-bold text-foreground">{athlete.name}</h3>
                             <p className="text-sm text-muted-foreground uppercase tracking-wide">
                               {athlete.country}
                             </p>
                           </div>
+                          {athlete.worldRanking && (
+                            <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30 min-w-[120px]">
+                              <span className="font-bold text-4xl text-foreground">#{athlete.worldRanking}</span>
+                              <span className="text-xs text-muted-foreground italic mt-1">Classement Mondial</span>
+                            </div>
+                          )}
                         </div>
 
                         <div className="h-px bg-gradient-to-r from-olympic-gold/50 via-olympic-gold/20 to-transparent"></div>
@@ -175,12 +181,6 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                           </h4>
 
                           <div className="grid gap-3">
-                            {athlete.worldRanking && (
-                              <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30">
-                                <span className="font-bold text-3xl text-foreground">#{athlete.worldRanking}</span>
-                                <span className="text-sm text-muted-foreground italic mt-1">Classement Mondial</span>
-                              </div>
-                            )}
                             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                               <span className="text-sm text-muted-foreground">Classement National</span>
                               <span className="font-semibold text-foreground">[À compléter]</span>
