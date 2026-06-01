@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       athletes: athletesWithRankings
     },
-    revalidate: 86400
+    revalidate: 604800
   };
 };
 
