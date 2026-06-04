@@ -141,7 +141,7 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                   <div className="w-full lg:w-3/5">
                     <div className="relative rounded-2xl overflow-hidden border-2 border-olympic-gold/20 bg-card shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-olympic-gold/40">
                       {/* Image d'action en filigrane */}
-                      <div className="absolute inset-0 opacity-[0.08] group-hover:opacity-[0.12] transition-opacity duration-500">
+                      <div className="absolute inset-0 opacity-[0.12] group-hover:opacity-[0.16] transition-opacity duration-500">
                         <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/30 via-transparent to-transparent"></div>
                         {athlete.actionImage ? (
                           <img
