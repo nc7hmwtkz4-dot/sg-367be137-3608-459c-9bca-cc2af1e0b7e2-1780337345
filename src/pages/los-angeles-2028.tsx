@@ -30,7 +30,7 @@ const athletesData: Athlete[] = [
   { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443 },
   { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
   { name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647 },
-  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361 }
+  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg" }
 ];
 
 export const getStaticProps: GetStaticProps = async () => {
