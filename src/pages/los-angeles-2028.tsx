@@ -165,7 +165,7 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                               {athlete.country}
                             </p>
                           </div>
-                          {athlete.worldRanking && (
+                          {athlete.worldRanking && athlete.worldRanking <= 50 && (
                             <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30 min-w-[120px]">
                               <span className="font-bold text-4xl text-foreground">#{athlete.worldRanking}</span>
                               <span className="text-xs text-muted-foreground italic mt-1">Classement Mondial</span>
