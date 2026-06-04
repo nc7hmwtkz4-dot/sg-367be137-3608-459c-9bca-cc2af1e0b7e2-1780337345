@@ -30,7 +30,9 @@ const athletesData: Athlete[] = [
   { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443 },
   { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
   { name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg" },
-  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg" }
+  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg" },
+  { name: "Maia Tincu", country: "FRA", flag: "🇫🇷" },
+  { name: "Iban Bariteaud", country: "FRA", flag: "🇫🇷" }
 ];
 
 export const getStaticProps: GetStaticProps = async () => {
