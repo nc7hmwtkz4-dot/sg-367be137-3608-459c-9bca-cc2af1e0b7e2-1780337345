@@ -123,7 +123,9 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                         <img
                           src={athlete.profileImage}
                           alt={athlete.name}
-                          className="w-full h-full object-cover"
+                          className={`w-full h-full object-cover ${
+                            athlete.name === "Maia Tincu" ? "object-[center_30%]" : ""
+                          }`}
                         />
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
