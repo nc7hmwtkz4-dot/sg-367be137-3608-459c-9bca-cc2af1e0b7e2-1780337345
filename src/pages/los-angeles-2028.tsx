@@ -78,7 +78,7 @@ interface PageProps {
 
 const getMedalColor = (palmares: string): string => {
   const lowerText = palmares.toLowerCase();
-  if (lowerText.includes("or") || lowerText.includes("gold")) return "text-[#FFD700]";
+  if (lowerText.includes("or") || lowerText.includes("gold") || lowerText.includes("champion")) return "text-[#FFD700]";
   if (lowerText.includes("argent") || lowerText.includes("silver")) return "text-[#C0C0C0]";
   if (lowerText.includes("bronze")) return "text-[#CD7F32]";
   return "text-olympic-gold";
