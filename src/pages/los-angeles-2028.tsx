@@ -214,8 +214,8 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                         </div>
 
                         <div className="pt-4">
-                          <p className="text-muted-foreground italic text-sm leading-relaxed">"Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de niveau mondial avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération."
-
+                          <p className="text-muted-foreground italic text-sm leading-relaxed">
+                            {athlete.bio || '"[Biographie à compléter]"'}
                           </p>
                         </div>
                       </div>
