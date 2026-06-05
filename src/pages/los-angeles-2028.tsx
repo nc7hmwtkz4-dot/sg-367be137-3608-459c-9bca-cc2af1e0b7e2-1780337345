@@ -124,7 +124,7 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                           src={athlete.profileImage}
                           alt={athlete.name}
                           className={`w-full h-full object-cover ${
-                            athlete.name === "Maia Tincu" ? "object-[center_30%]" : ""
+                            athlete.name === "Maia Tincu" ? "object-[center_40%]" : ""
                           }`}
                         />
                       ) : (
