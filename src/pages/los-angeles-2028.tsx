@@ -186,18 +186,6 @@ export default function LosAngeles2028({ athletes }: PageProps) {
 
                           <div className="grid gap-3">
                             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
-                              <span className="text-sm text-muted-foreground">Classement National</span>
-                              <span className="font-semibold text-foreground">
-                                {athlete.stats?.ranking || "[À compléter]"}
-                              </span>
-                            </div>
-                            <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
-                              <span className="text-sm text-muted-foreground">Meilleur Score</span>
-                              <span className="font-semibold text-foreground">
-                                {athlete.stats?.bestScore || "[À compléter]"}
-                              </span>
-                            </div>
-                            <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                               <span className="text-sm text-muted-foreground">Compétitions Internationales</span>
                               <span className="font-semibold text-foreground">
                                 {athlete.stats?.competitions || "[À compléter]"}
