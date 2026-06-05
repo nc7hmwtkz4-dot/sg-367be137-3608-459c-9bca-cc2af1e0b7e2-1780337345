@@ -76,6 +76,14 @@ interface PageProps {
   athletes: Athlete[];
 }
 
+const getMedalColor = (palmares: string): string => {
+  const lowerText = palmares.toLowerCase();
+  if (lowerText.includes("or") || lowerText.includes("gold")) return "text-[#FFD700]";
+  if (lowerText.includes("argent") || lowerText.includes("silver")) return "text-[#C0C0C0]";
+  if (lowerText.includes("bronze")) return "text-[#CD7F32]";
+  return "text-olympic-gold";
+};
+
 export default function LosAngeles2028({ athletes }: PageProps) {
   return (
     <>
@@ -182,16 +190,11 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                         <div className="h-px bg-gradient-to-r from-olympic-gold/50 via-olympic-gold/20 to-transparent"></div>
 
                         <div className="space-y-4">
-                          <h4 className="text-xl font-semibold text-foreground flex items-center gap-2">
-                            <Trophy className="w-5 h-5 text-olympic-gold" />
-                            Palmarès et Statistiques
-                          </h4>
-
                           <div className="grid gap-3">
                             {athlete.palmares && athlete.palmares.length > 0 ?
                             athlete.palmares.map((titre, idx) =>
                             <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
-                                  <Trophy className="w-4 h-4 text-olympic-gold flex-shrink-0" />
+                                  <Trophy className={`w-4 h-4 ${getMedalColor(titre)} flex-shrink-0`} />
                                   <span className="font-semibold text-foreground">{titre}</span>
                                 </div>
                             ) :
