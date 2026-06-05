@@ -23,18 +23,18 @@ interface Athlete {
 }
 
 const athletesData: Athlete[] = [
-  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", bestScore: "680/720", ranking: "Top 15 France" }, palmares: ["Médaille d'argent Coupe du Monde Madrid 2025"], bio: "Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de haut niveau avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération." },
-  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419, profileImage: "/IMG_3209.HEIC", actionImage: "/R3X_2810.jpg", stats: { discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }, palmares: [], bio: "Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique." },
-  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }, palmares: ["Médaille de bronze au championnat d'Europe par équipe 2026"], bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
-  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935, palmares: [] },
-  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974, palmares: [] },
-  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG", palmares: [] },
-  { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮", palmares: [] },
-  { name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg", palmares: [] },
-  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg", palmares: [] },
-  { name: "Maia Tincu", country: "FRA", flag: "🇫🇷", waId: 43740, profileImage: "/IMG_5182.JPG", palmares: [] },
-  { name: "Iban Bariteaud", country: "FRA", flag: "🇫🇷", waId: 41671, palmares: [] }
-];
+{ name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", bestScore: "680/720", ranking: "Top 15 France" }, palmares: ["Médaille d'argent Coupe du Monde Madrid 2025"], bio: "Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de haut niveau avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération." },
+{ name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419, profileImage: "/IMG_3209.HEIC", actionImage: "/R3X_2810.jpg", stats: { discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }, palmares: [], bio: "Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique." },
+{ name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }, palmares: ["Médaille de bronze au championnat d'Europe par équipe 2026"], bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
+{ name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935, palmares: [] },
+{ name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974, palmares: [] },
+{ name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG", palmares: [] },
+{ name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮", palmares: [] },
+{ name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg", palmares: [] },
+{ name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg", palmares: [] },
+{ name: "Maia Tincu", country: "FRA", flag: "🇫🇷", waId: 43740, profileImage: "/IMG_5182.JPG", palmares: [] },
+{ name: "Iban Bariteaud", country: "FRA", flag: "🇫🇷", waId: 41671, palmares: [] }];
+
 
 export const getStaticProps: GetStaticProps = async () => {
   const athletesWithRankings = await Promise.all(
@@ -81,8 +81,8 @@ export default function LosAngeles2028({ athletes }: PageProps) {
     <>
       <SEO
         title="Projet Los Angeles 2028 - Arc Club de Nîmes"
-        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028."
-      />
+        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028." />
+      
 
       <Header />
 
@@ -114,22 +114,22 @@ export default function LosAngeles2028({ athletes }: PageProps) {
               return (
                 <div
                   key={index}
-                  className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 lg:gap-12 items-center`}
-                >
+                  className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} gap-8 lg:gap-12 items-center`}>
+                  
                   {/* Photo de profil */}
                   <div className="w-full lg:w-2/5">
                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-olympic-gold/20 group hover:border-olympic-gold/40 transition-all duration-500">
                       <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/20 to-transparent"></div>
-                      {athlete.profileImage ? (
-                        <img
-                          src={athlete.profileImage}
-                          alt={athlete.name}
-                          className={`w-full h-full object-cover ${
-                            athlete.name === "Maia Tincu" ? "object-[center_40%]" : ""
-                          }`}
-                        />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
+                      {athlete.profileImage ?
+                      <img
+                        src={athlete.profileImage}
+                        alt={athlete.name}
+                        className={`w-full h-full object-cover ${
+                        athlete.name === "Maia Tincu" ? "object-[center_40%]" : ""}`
+                        } /> :
+
+
+                      <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
                           <div className="text-center space-y-3">
                             <div className="text-6xl">{athlete.flag}</div>
                             <p className="text-2xl font-bold text-foreground">{athlete.name}</p>
@@ -138,7 +138,7 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                             </p>
                           </div>
                         </div>
-                      )}
+                      }
                     </div>
                   </div>
 
@@ -148,17 +148,17 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                       {/* Image d'action en filigrane */}
                       <div className="absolute inset-0 opacity-[0.12] group-hover:opacity-[0.16] transition-opacity duration-500">
                         <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/30 via-transparent to-transparent"></div>
-                        {athlete.actionImage ? (
-                          <img
-                            src={athlete.actionImage}
-                            alt={`${athlete.name} en action`}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          <div className="absolute inset-0 flex items-center justify-center">
+                        {athlete.actionImage ?
+                        <img
+                          src={athlete.actionImage}
+                          alt={`${athlete.name} en action`}
+                          className="w-full h-full object-cover" /> :
+
+
+                        <div className="absolute inset-0 flex items-center justify-center">
                             <Target className="w-64 h-64 text-olympic-gold rotate-12" />
                           </div>
-                        )}
+                        }
                       </div>
 
                       {/* Contenu */}
@@ -171,12 +171,12 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                               {athlete.country}
                             </p>
                           </div>
-                          {athlete.worldRanking && athlete.worldRanking <= 50 && (
-                            <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30 min-w-[120px]">
+                          {athlete.worldRanking && athlete.worldRanking <= 50 &&
+                          <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30 min-w-[120px]">
                               <span className="font-bold text-4xl text-foreground">#{athlete.worldRanking}</span>
                               <span className="text-xs text-muted-foreground italic mt-1">Classement Mondial</span>
                             </div>
-                          )}
+                          }
                         </div>
 
                         <div className="h-px bg-gradient-to-r from-olympic-gold/50 via-olympic-gold/20 to-transparent"></div>
@@ -188,21 +188,21 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                           </h4>
 
                           <div className="grid gap-3">
-                            {athlete.palmares && athlete.palmares.length > 0 ? (
-                              athlete.palmares.map((titre, idx) => (
-                                <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
+                            {athlete.palmares && athlete.palmares.length > 0 ?
+                            athlete.palmares.map((titre, idx) =>
+                            <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
                                   <Trophy className="w-4 h-4 text-olympic-gold flex-shrink-0" />
                                   <span className="font-semibold text-foreground">{titre}</span>
                                 </div>
-                              ))
-                            ) : (
-                              <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
+                            ) :
+
+                            <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                                 <span className="text-sm text-muted-foreground">Compétitions Internationales</span>
                                 <span className="font-semibold text-foreground">
                                   {athlete.stats?.competitions || "[À compléter]"}
                                 </span>
                               </div>
-                            )}
+                            }
                             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                               <span className="text-sm text-muted-foreground">Objectif LA 2028</span>
                               <span className="font-semibold text-olympic-gold flex items-center gap-1">
@@ -214,15 +214,15 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                         </div>
 
                         <div className="pt-4">
-                          <p className="text-muted-foreground italic text-sm leading-relaxed">
-                            "{athlete.bio || "[Biographie courte ou citation de l'athlète à ajouter]"}"
+                          <p className="text-muted-foreground italic text-sm leading-relaxed">"Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de niveau mondial avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération."
+
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
+                </div>);
+
             })}
           </div>
         </div>
@@ -239,13 +239,13 @@ export default function LosAngeles2028({ athletes }: PageProps) {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105"
-          >
+            className="inline-flex items-center gap-2 px-8 py-4 bg-olympic-gold text-olympic-gold-foreground font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-olympic-gold/90 transition-all duration-300 hover:scale-105">
+            
             Retour à l'accueil
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 }
