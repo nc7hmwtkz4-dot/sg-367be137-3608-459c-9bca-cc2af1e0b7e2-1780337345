@@ -17,6 +17,7 @@ interface Athlete {
     bestScore?: string;
     ranking?: string;
   };
+  palmares?: string[];
   bio?: string;
   worldRanking?: number | null;
 }
@@ -24,7 +25,7 @@ interface Athlete {
 const athletesData: Athlete[] = [
   { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
   { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419, profileImage: "/IMG_3209.HEIC", actionImage: "/R3X_2810.jpg", stats: { discipline: "Arc Classique", competitions: "10 compétitions internationales", bestScore: "665/720", ranking: "Top 20 France" }, bio: "Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique." },
-  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", competitions: "15 compétitions internationales", bestScore: "692/720", ranking: "Top 10 France" }, bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
+  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }, palmares: ["Champion d'Europe par équipe 2026"], bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
   { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935 },
   { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974 },
   { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG" },
@@ -187,12 +188,21 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                           </h4>
 
                           <div className="grid gap-3">
-                            <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
-                              <span className="text-sm text-muted-foreground">Compétitions Internationales</span>
-                              <span className="font-semibold text-foreground">
-                                {athlete.stats?.competitions || "[À compléter]"}
-                              </span>
-                            </div>
+                            {athlete.palmares && athlete.palmares.length > 0 ? (
+                              athlete.palmares.map((titre, idx) => (
+                                <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
+                                  <Trophy className="w-4 h-4 text-olympic-gold flex-shrink-0" />
+                                  <span className="font-semibold text-foreground">{titre}</span>
+                                </div>
+                              ))
+                            ) : (
+                              <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
+                                <span className="text-sm text-muted-foreground">Compétitions Internationales</span>
+                                <span className="font-semibold text-foreground">
+                                  {athlete.stats?.competitions || "[À compléter]"}
+                                </span>
+                              </div>
+                            )}
                             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                               <span className="text-sm text-muted-foreground">Objectif LA 2028</span>
                               <span className="font-semibold text-olympic-gold flex items-center gap-1">
