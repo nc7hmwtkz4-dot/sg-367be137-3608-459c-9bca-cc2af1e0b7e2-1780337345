@@ -23,17 +23,17 @@ interface Athlete {
 }
 
 const athletesData: Athlete[] = [
-  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", competitions: "12 compétitions nationales", bestScore: "680/720", ranking: "Top 15 France" } },
-  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419, profileImage: "/IMG_3209.HEIC", actionImage: "/R3X_2810.jpg", stats: { discipline: "Arc Classique", competitions: "10 compétitions internationales", bestScore: "665/720", ranking: "Top 20 France" }, bio: "Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique." },
-  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }, palmares: ["Champion d'Europe par équipe 2026"], bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
-  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935 },
-  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974 },
-  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG" },
-  { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
-  { name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg" },
-  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg" },
-  { name: "Maia Tincu", country: "FRA", flag: "🇫🇷", waId: 43740, profileImage: "/IMG_5182.JPG" },
-  { name: "Iban Bariteaud", country: "FRA", flag: "🇫🇷", waId: 41671 }
+  { name: "Baptiste Addis", country: "FRA", flag: "🇫🇷", waId: 32221, profileImage: "/R3X_2643.jpg", actionImage: "/media_51380562_50966596_compressed.jpg", stats: { discipline: "Arc Classique", bestScore: "680/720", ranking: "Top 15 France" }, palmares: [] },
+  { name: "Victoria Sebastian", country: "FRA", flag: "🇫🇷", waId: 27419, profileImage: "/IMG_3209.HEIC", actionImage: "/R3X_2810.jpg", stats: { discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }, palmares: [], bio: "Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique." },
+  { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }, palmares: ["Médaille de bronze au championnat d'Europe par équipe 2026"], bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
+  { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935, palmares: [] },
+  { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974, palmares: [] },
+  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG", palmares: [] },
+  { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮", palmares: [] },
+  { name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg", palmares: [] },
+  { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg", palmares: [] },
+  { name: "Maia Tincu", country: "FRA", flag: "🇫🇷", waId: 43740, profileImage: "/IMG_5182.JPG", palmares: [] },
+  { name: "Iban Bariteaud", country: "FRA", flag: "🇫🇷", waId: 41671, palmares: [] }
 ];
 
 export const getStaticProps: GetStaticProps = async () => {
