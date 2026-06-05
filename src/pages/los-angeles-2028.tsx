@@ -27,7 +27,7 @@ const athletesData: Athlete[] = [
   { name: "Jean-Charles Valladont", country: "FRA", flag: "🇫🇷", waId: 6403, profileImage: "/B16_7739.jpg", actionImage: "/R3X_9396.jpg", stats: { discipline: "Arc Classique", competitions: "15 compétitions internationales", bestScore: "692/720", ranking: "Top 10 France" }, bio: "Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle." },
   { name: "Anaëlle Florent", country: "FRA", flag: "🇫🇷", waId: 19935 },
   { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974 },
-  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443 },
+  { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG" },
   { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮" },
   { name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg" },
   { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg" },
