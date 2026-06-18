@@ -206,13 +206,6 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                                 </span>
                               </div>
                             }
-                            <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
-                              <span className="text-sm text-muted-foreground">Objectif LA 2028</span>
-                              <span className="font-semibold text-olympic-gold flex items-center gap-1">
-                                Qualification
-                                <ArrowRight className="w-4 h-4" />
-                              </span>
-                            </div>
                           </div>
                         </div>
 
