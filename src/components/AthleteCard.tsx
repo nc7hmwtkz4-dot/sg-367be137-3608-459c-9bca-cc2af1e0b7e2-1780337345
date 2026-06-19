@@ -59,16 +59,16 @@ export function AthleteCard({
       <div className="w-full lg:w-2/5">
         <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-olympic-gold/20 group hover:border-olympic-gold/40 transition-all duration-500">
           <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/20 to-transparent"></div>
-          {profileImage ? (
-            <img
-              src={profileImage}
-              alt={name}
-              className={`w-full h-full object-cover ${
-                name === "Maia Tincu" ? "object-[center_40%]" : ""
-              }`}
-            />
-          ) : (
-            <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
+          {profileImage ?
+          <img
+            src={profileImage}
+            alt={name}
+            className={`w-full h-full object-cover ${
+            name === "Maia Tincu" ? "object-[center_40%]" : ""}`
+            } /> :
+
+
+          <div className="absolute inset-0 flex items-center justify-center bg-muted/50 backdrop-blur-sm">
               <div className="text-center space-y-3">
                 <div className="text-6xl">{flag}</div>
                 <p className="text-2xl font-bold text-foreground">{name}</p>
@@ -77,7 +77,7 @@ export function AthleteCard({
                 </p>
               </div>
             </div>
-          )}
+          }
         </div>
       </div>
 
@@ -87,17 +87,17 @@ export function AthleteCard({
           {/* Image d'action en filigrane */}
           <div className="absolute inset-0 opacity-[0.12] group-hover:opacity-[0.16] transition-opacity duration-500">
             <div className="absolute inset-0 bg-gradient-to-br from-olympic-gold/30 via-transparent to-transparent"></div>
-            {actionImage ? (
-              <img
-                src={actionImage}
-                alt={`${name} en action`}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div className="absolute inset-0 flex items-center justify-center">
+            {actionImage ?
+            <img
+              src={actionImage}
+              alt={`${name} en action`}
+              className="w-full h-full object-cover" /> :
+
+
+            <div className="absolute inset-0 flex items-center justify-center">
                 <Target className="w-64 h-64 text-olympic-gold rotate-12" />
               </div>
-            )}
+            }
           </div>
 
           {/* Contenu */}
@@ -110,46 +110,46 @@ export function AthleteCard({
                   {country}
                 </p>
               </div>
-              {worldRanking && worldRanking <= 50 && (
-                <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30 min-w-[120px]">
+              {worldRanking && worldRanking <= 50 &&
+              <div className="flex flex-col items-center justify-center p-4 bg-olympic-gold/10 rounded-lg border border-olympic-gold/30 min-w-[120px]">
                   <span className="font-bold text-4xl text-foreground">#{worldRanking}</span>
                   <span className="text-xs text-muted-foreground italic mt-1">Classement Mondial</span>
                 </div>
-              )}
+              }
             </div>
 
             <div className="h-px bg-gradient-to-r from-olympic-gold/50 via-olympic-gold/20 to-transparent"></div>
 
             <div className="space-y-4">
               <div className="grid gap-3">
-                {palmares && palmares.length > 0 ? (
-                  sortPalmaresByYear(palmares).map((titre, idx) => (
-                    <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
+                {palmares && palmares.length > 0 ?
+                sortPalmaresByYear(palmares).map((titre, idx) =>
+                <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
                       <Trophy className={`w-4 h-4 ${getMedalColor(titre)} flex-shrink-0`} />
                       <span className="font-semibold text-foreground">{titre}</span>
                     </div>
-                  ))
-                ) : (
-                  <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
+                ) :
+
+                <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                     <span className="text-sm text-muted-foreground">Compétitions Internationales</span>
                     <span className="font-semibold text-foreground">
                       {stats?.competitions || "[À compléter]"}
                     </span>
                   </div>
-                )}
+                }
               </div>
             </div>
 
             <div className="pt-4">
-              {bio && (
-                <p className="text-muted-foreground italic text-sm leading-relaxed">
-                  {bio}
-                </p>
-              )}
+              {bio &&
+              <p className="text-muted-foreground italic text-sm leading-relaxed">Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune tout en intégrant l'équipe de France senior dès 2026, une performance pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
+
+              </p>
+              }
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>);
+
 }
