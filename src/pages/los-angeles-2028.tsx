@@ -53,8 +53,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
     <>
       <SEO
         title="Projet Los Angeles 2028 - Arc Club de Nîmes"
-        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028."
-      />
+        description="Découvrez les 8 athlètes de l'Arc Club de Nîmes en route vers les Jeux Olympiques de Los Angeles 2028." />
+      
 
       <Header />
 
@@ -88,12 +88,12 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/media_51380562_50966596_compressed.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "680/720", ranking: "Top 15 France" }}
               palmares={[
-                "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
-                "Médaille d'argent Coupe du Monde Madrid 2025"
-              ]}
+              "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
+              "Médaille d'argent Coupe du Monde Madrid 2025"]
+              }
               worldRanking={rankings[32221]}
-              isEven={true}
-            >
+              isEven={true}>
+              
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de haut niveau avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération.
               </p>
@@ -108,8 +108,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               stats={{ discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }}
               palmares={[]}
               worldRanking={rankings[27419]}
-              isEven={false}
-            >
+              isEven={false}>
+              
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique.
               </p>
@@ -123,14 +123,14 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/R3X_9396.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }}
               palmares={[
-                "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
-                "Champion d'Europe 2024 par équipe",
-                "Médaille d'or à la Coupe du Monde de Madrid 2025 par équipe",
-                "Médaille de bronze au Championnat d'Europe 2024"
-              ]}
+              "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
+              "Champion d'Europe 2024 par équipe",
+              "Médaille d'or à la Coupe du Monde de Madrid 2025 par équipe",
+              "Médaille de bronze au Championnat d'Europe 2024"]
+              }
               worldRanking={rankings[6403]}
-              isEven={true}
-            >
+              isEven={true}>
+              
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle.
               </p>
@@ -142,8 +142,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               palmares={[]}
               worldRanking={rankings[19935]}
-              isEven={false}
-            />
+              isEven={false} />
+            
 
             <AthleteCard
               name="Thomas Aubert"
@@ -153,8 +153,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/SYG7979.jpg"
               palmares={[]}
               worldRanking={rankings[5974]}
-              isEven={true}
-            />
+              isEven={true} />
+            
 
             <AthleteCard
               name="Franck Eyeni"
@@ -163,8 +163,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
               palmares={["Champion d'Afrique 2025"]}
               worldRanking={rankings[20443]}
-              isEven={false}
-            >
+              isEven={false}>
+              
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 Biographie à venir
               </p>
@@ -177,15 +177,15 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               profileImage="/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg"
               actionImage="/YWC23_R3X_3247.jpg"
               palmares={[
-                "Médaille d'or à la Youth Cup de Ruse (BUL) 2026",
-                "Médaille d'or au Championnat d'Europe par équipe 2024",
-                "Médaille d'or au Championnat du monde jeune par équipe 2023"
-              ]}
+              "Médaille d'or à la Youth Cup de Ruse (BUL) 2026",
+              "Médaille d'or au Championnat d'Europe par équipe 2024",
+              "Médaille d'or au Championnat du monde jeune par équipe 2023"]
+              }
               worldRanking={rankings[46647]}
-              isEven={true}
-            >
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune (Champion du monde et d'Europe par équipe, vainqueur de la Youth Cup) tout en intégrant l'équipe de France senior dès 2026, une performance rare pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique précoce qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune tout en intégrant l'équipe de France senior dès 2026, une performance pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
+
               </p>
             </AthleteCard>
 
@@ -197,8 +197,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/SYG2932.jpg"
               palmares={[]}
               worldRanking={rankings[45361]}
-              isEven={false}
-            />
+              isEven={false} />
+            
 
             <AthleteCard
               name="Maia Tincu"
@@ -207,8 +207,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               profileImage="/IMG_5182.JPG"
               palmares={[]}
               worldRanking={rankings[43740]}
-              isEven={true}
-            />
+              isEven={true} />
+            
 
             <AthleteCard
               name="Iban Bariteaud"
@@ -216,8 +216,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               palmares={[]}
               worldRanking={rankings[41671]}
-              isEven={false}
-            />
+              isEven={false} />
+            
           </div>
         </div>
       </section>
@@ -239,6 +239,6 @@ export default function LosAngeles2028({ rankings }: PageProps) {
           </Link>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 }
