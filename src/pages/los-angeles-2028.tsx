@@ -91,10 +91,13 @@ export default function LosAngeles2028({ rankings }: PageProps) {
                 "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
                 "Médaille d'argent Coupe du Monde Madrid 2025"
               ]}
-              bio="Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de haut niveau avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération."
               worldRanking={rankings[32221]}
               isEven={true}
-            />
+            >
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Médaillé d'argent par équipe aux Jeux Olympiques de Paris 2024, Baptiste confirme son statut de compétiteur de haut niveau avec une saison 2025 remarquable. Disputant 3 demi-finales sur 4 possibles en Coupe du Monde, dont une médaille d'argent à Madrid, il termine l'année au 6e rang mondial, s'imposant comme l'un des meilleurs archers de sa génération.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Victoria Sebastian"
@@ -104,10 +107,13 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/R3X_2810.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }}
               palmares={[]}
-              bio="Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique."
               worldRanking={rankings[27419]}
               isEven={false}
-            />
+            >
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Jean-Charles Valladont"
@@ -122,10 +128,13 @@ export default function LosAngeles2028({ rankings }: PageProps) {
                 "Médaille d'or à la Coupe du Monde de Madrid 2025 par équipe",
                 "Médaille de bronze au Championnat d'Europe 2024"
               ]}
-              bio="Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle."
               worldRanking={rankings[6403]}
               isEven={true}
-            />
+            >
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Figure emblématique du tir à l'arc français depuis 2006, Jean-Charles incarne l'excellence et la constance au plus haut niveau. Médaillé d'argent individuel aux Jeux Olympiques de Rio 2016, puis médaillé d'argent par équipe à Paris 2024, il vise désormais l'or olympique à Los Angeles 2028 pour couronner une carrière exceptionnelle.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Anaëlle Florent"
@@ -153,10 +162,13 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇨🇮"
               profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
               palmares={["Champion d'Afrique 2025"]}
-              bio="Biographie à venir"
               worldRanking={rankings[20443]}
               isEven={false}
-            />
+            >
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Biographie à venir
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Alexis Renaudineau"
@@ -169,10 +181,13 @@ export default function LosAngeles2028({ rankings }: PageProps) {
                 "Médaille d'or au Championnat d'Europe par équipe 2024",
                 "Médaille d'or au Championnat du monde jeune par équipe 2023"
               ]}
-              bio="Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune (Champion du monde et d'Europe par équipe, vainqueur de la Youth Cup) tout en intégrant l'équipe de France senior dès 2026, une performance rare pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique précoce qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028."
               worldRanking={rankings[46647]}
               isEven={true}
-            />
+            >
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune (Champion du monde et d'Europe par équipe, vainqueur de la Youth Cup) tout en intégrant l'équipe de France senior dès 2026, une performance rare pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique précoce qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Mila Fremery-Delestan"

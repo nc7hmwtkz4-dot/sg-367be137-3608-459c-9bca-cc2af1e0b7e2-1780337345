@@ -1,3 +1,4 @@
+import React from "react";
 import { Trophy, Target } from "lucide-react";
 
 interface AthleteCardProps {
@@ -13,9 +14,9 @@ interface AthleteCardProps {
     ranking?: string;
   };
   palmares?: string[];
-  bio?: string;
   worldRanking?: number | null;
   isEven: boolean;
+  children?: React.ReactNode;
 }
 
 const getMedalColor = (palmares: string): string => {
@@ -47,9 +48,9 @@ export function AthleteCard({
   actionImage,
   stats,
   palmares,
-  bio,
   worldRanking,
-  isEven
+  isEven,
+  children
 }: AthleteCardProps) {
   return (
     <div
@@ -141,11 +142,7 @@ export function AthleteCard({
             </div>
 
             <div className="pt-4">
-              {bio &&
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                {bio}
-              </p>
-              }
+              {children}
             </div>
           </div>
         </div>
