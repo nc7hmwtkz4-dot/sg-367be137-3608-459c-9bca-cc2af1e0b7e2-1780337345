@@ -1,6 +1,6 @@
 ---
 title: Restauration des biographies des athlètes
-status: todo
+status: done
 priority: urgent
 type: bug
 tags:
