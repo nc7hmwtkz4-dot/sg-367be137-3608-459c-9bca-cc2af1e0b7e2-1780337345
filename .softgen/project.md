@@ -16,3 +16,23 @@ Style: Prestigieux, sportif, avec utilisation d'images en filigrane (watermark) 
 - Section Hero d'introduction spécifique à la page LA 2028.
 - Disposition en liste alternée (Image à gauche / Texte à droite) pour les athlètes.
 - Fiches athlètes : drapeau, photo de profil, zone de statistiques, palmarès trié chronologiquement et photo en filigrane.
+
+## Architecture Technique
+**IMPORTANT - Compatibilité avec l'éditeur visuel :**
+Les biographies des athlètes DOIVENT être passées comme `children` au composant `AthleteCard`, et NON comme prop `bio`. Chaque balise `<p>` contenant une biographie doit être déclarée individuellement dans le fichier `src/pages/los-angeles-2028.tsx`.
+
+**Raison :** L'éditeur visuel de Softgen modifie le fichier source où la balise HTML est définie. Si les biographies sont dans le composant `AthleteCard.tsx` (fichier partagé), modifier une biographie via l'éditeur affecte toutes les cartes d'athlètes. En passant les biographies comme children depuis la page principale, chaque athlète possède sa propre balise `<p>` distincte dans le code source, permettant des modifications isolées.
+
+**Structure correcte :**
+```tsx
+<AthleteCard name="..." country="..." ...>
+  <p className="text-muted-foreground italic text-sm leading-relaxed">
+    Biographie unique de cet athlète
+  </p>
+</AthleteCard>
+```
+
+**À NE PAS FAIRE :**
+- Ne jamais utiliser une boucle `.map()` pour générer les cartes d'athlètes
+- Ne jamais passer la biographie comme prop `bio="..."`
+- Ne jamais définir le texte de la biographie à l'intérieur du composant `AthleteCard.tsx`
