@@ -210,8 +210,8 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                         </div>
 
                         <div className="pt-4">
-                          <p className="text-muted-foreground italic text-sm leading-relaxed">
-                            {athlete.bio || '"[Biographie à compléter]"'}
+                          <p className="text-muted-foreground italic text-sm leading-relaxed">Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune tout en intégrant l'équipe de France senior dès 2026, une performance pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
+
                           </p>
                         </div>
                       </div>
