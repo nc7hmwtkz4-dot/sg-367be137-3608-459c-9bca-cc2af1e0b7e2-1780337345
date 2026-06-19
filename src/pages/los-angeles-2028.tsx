@@ -30,7 +30,7 @@ const athletesData: Athlete[] = [
 { name: "Thomas Aubert", country: "SUI", flag: "🇨🇭", waId: 5974, profileImage: "/DA6_5642-3.jpg", actionImage: "/SYG7979.jpg", palmares: [] },
 { name: "Franck Eyeni", country: "CIV", flag: "🇨🇮", waId: 20443, profileImage: "/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG", palmares: [] },
 { name: "Marcelle Diombo", country: "CIV", flag: "🇨🇮", palmares: [] },
-{ name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg", palmares: [] },
+{ name: "Alexis Renaudineau", country: "FRA", flag: "🇫🇷", waId: 46647, profileImage: "/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg", actionImage: "/YWC23_R3X_3247.jpg", palmares: ["Médaille d'or à la Youth Cup de Ruse (BUL) 2026", "Médaille d'or au Championnat d'Europe par équipe 2024", "Médaille d'or au Championnat du monde jeune par équipe 2023"] },
 { name: "Mila Fremery-Delestan", country: "FRA", flag: "🇫🇷", waId: 45361, profileImage: "/R3X_6040.jpg", actionImage: "/SYG2932.jpg", palmares: [] },
 { name: "Maia Tincu", country: "FRA", flag: "🇫🇷", waId: 43740, profileImage: "/IMG_5182.JPG", palmares: [] },
 { name: "Iban Bariteaud", country: "FRA", flag: "🇫🇷", waId: 41671, palmares: [] }];
