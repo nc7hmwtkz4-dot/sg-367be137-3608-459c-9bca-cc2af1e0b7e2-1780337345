@@ -1,6 +1,6 @@
 ---
 title: Correction du rendu dynamique des biographies
-status: todo
+status: done
 priority: urgent
 type: bug
 ---
