@@ -84,6 +84,19 @@ const getMedalColor = (palmares: string): string => {
   return "text-olympic-gold";
 };
 
+const extractYear = (palmares: string): number => {
+  const yearMatch = palmares.match(/\b(20\d{2})\b/);
+  return yearMatch ? parseInt(yearMatch[1], 10) : 0;
+};
+
+const sortPalmaresByYear = (palmares: string[]): string[] => {
+  return [...palmares].sort((a, b) => {
+    const yearA = extractYear(a);
+    const yearB = extractYear(b);
+    return yearB - yearA;
+  });
+};
+
 export default function LosAngeles2028({ athletes }: PageProps) {
   return (
     <>
@@ -192,7 +205,7 @@ export default function LosAngeles2028({ athletes }: PageProps) {
                         <div className="space-y-4">
                           <div className="grid gap-3">
                             {athlete.palmares && athlete.palmares.length > 0 ?
-                            athlete.palmares.map((titre, idx) =>
+                            sortPalmaresByYear(athlete.palmares).map((titre, idx) =>
                             <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
                                   <Trophy className={`w-4 h-4 ${getMedalColor(titre)} flex-shrink-0`} />
                                   <span className="font-semibold text-foreground">{titre}</span>
