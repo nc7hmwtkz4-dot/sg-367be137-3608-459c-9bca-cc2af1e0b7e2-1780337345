@@ -137,7 +137,7 @@ export function AthleteCard({
                       <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
                         {isSelection ? (
                           <div className="relative w-5 h-5 flex-shrink-0">
-                            <Shirt className="w-5 h-5 text-olympic-gold" />
+                            <Shirt className="w-5 h-5 text-blue-600" />
                             <span className="absolute inset-0 flex items-center justify-center text-[9px] font-bold text-foreground">
                               {selectionNumber}
                             </span>
