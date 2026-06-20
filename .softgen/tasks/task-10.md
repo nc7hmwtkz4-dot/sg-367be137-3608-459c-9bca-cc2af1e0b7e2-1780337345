@@ -1,6 +1,6 @@
 ---
 title: Fiche Franck Eyeni
-status: todo
+status: done
 priority: high
 type: feature
 ---
