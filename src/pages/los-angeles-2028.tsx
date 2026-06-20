@@ -140,10 +140,20 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Anaëlle Florent"
               country="FRA"
               flag="🇫🇷"
-              palmares={[]}
+              stats={{ discipline: "Arc à Poulies", bestScore: "701/720" }}
+              palmares={[
+                "5e en double mixte aux Championnats d'Europe 2026",
+                "4 sélections en Coupe du Monde 2026",
+                "Médaille de Bronze à la Coupe du Monde de Medellin 2022 par équipes (Classique)",
+                "Championne de France D1 par équipes en 2024"
+              ]}
               worldRanking={rankings[19935]}
-              isEven={false} />
-            
+              isEven={false}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Après une carrière internationale remarquable en arc classique, marquée par des podiums en Coupe du Monde et aux Jeux Méditerranéens, Anaëlle a opéré une transition fulgurante vers l'arc à poulies. En quelques mois seulement, son talent naturel et son exigence lui ont ouvert les portes de l'équipe de France dans sa nouvelle discipline, où elle signe déjà la meilleure performance française (701 points). Entraîneure professionnelle passionnée, elle allie la rigueur du très haut niveau à l'art de la transmission pour viser les sommets de Los Angeles 2028.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Thomas Aubert"
