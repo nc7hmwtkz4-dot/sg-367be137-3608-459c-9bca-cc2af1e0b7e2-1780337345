@@ -171,12 +171,18 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               country="CIV"
               flag="🇨🇮"
               profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
-              palmares={["Champion d'Afrique 2025"]}
+              palmares={[
+                "Médaille d'or au Championnat d'Afrique 2025 (individuel)",
+                "Médaille d'argent au Championnat d'Afrique 2023 (par équipe mixte)",
+                "Médaille d'argent au Championnat d'Afrique 2022 (individuel)",
+                "Record d'Afrique en arc classique (660 points)",
+                "Participation aux Jeux Olympiques de la Jeunesse 2018"
+              ]}
               worldRanking={rankings[20443]}
               isEven={false}>
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Biographie à venir
+                Figure majeure du tir à l'arc africain, Franck Eyeni incarne l'excellence sportive ivoirienne sur la scène continentale. Champion d'Afrique 2025 en individuel, détenteur du record d'Afrique et médaillé à de multiples reprises lors des championnats continentaux, il a déjà goûté à l'expérience olympique en participant aux Jeux Olympiques de la Jeunesse 2018. Formé au sein de l'Arc Club de Nîmes, il représente fièrement la Côte d'Ivoire en mettant toute sa précision et sa maîtrise avec un objectif clair : briller à Los Angeles 2028.
               </p>
             </AthleteCard>
 
