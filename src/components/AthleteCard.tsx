@@ -1,5 +1,5 @@
 import React from "react";
-import { Trophy, Target } from "lucide-react";
+import { Trophy, Target, Shirt } from "lucide-react";
 
 interface AthleteCardProps {
   name: string;
@@ -38,6 +38,11 @@ const sortPalmaresByYear = (palmares: string[]): string[] => {
     const yearB = extractYear(b);
     return yearB - yearA;
   });
+};
+
+const extractSelectionNumber = (palmares: string): number | null => {
+  const match = palmares.match(/(\d+)\s*sélection/i);
+  return match ? parseInt(match[1], 10) : null;
 };
 
 export function AthleteCard({
@@ -124,12 +129,26 @@ export function AthleteCard({
             <div className="space-y-4">
               <div className="grid gap-3">
                 {palmares && palmares.length > 0 ?
-                sortPalmaresByYear(palmares).map((titre, idx) =>
-                <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
-                      <Trophy className={`w-4 h-4 ${getMedalColor(titre)} flex-shrink-0`} />
-                      <span className="font-semibold text-foreground">{titre}</span>
-                    </div>
-                ) :
+                sortPalmaresByYear(palmares).map((titre, idx) => {
+                    const selectionNumber = extractSelectionNumber(titre);
+                    const isSelection = selectionNumber !== null;
+                    
+                    return (
+                      <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
+                        {isSelection ? (
+                          <div className="relative w-5 h-5 flex-shrink-0">
+                            <Shirt className="w-5 h-5 text-olympic-gold" />
+                            <span className="absolute inset-0 flex items-center justify-center text-[9px] font-bold text-foreground">
+                              {selectionNumber}
+                            </span>
+                          </div>
+                        ) : (
+                          <Trophy className={`w-4 h-4 ${getMedalColor(titre)} flex-shrink-0`} />
+                        )}
+                        <span className="font-semibold text-foreground">{titre}</span>
+                      </div>
+                    );
+                  }) :
 
                 <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                     <span className="text-sm text-muted-foreground">Compétitions Internationales</span>
