@@ -222,7 +222,13 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               country="FRA"
               flag="🇫🇷"
               profileImage="/IMG_5182.JPG"
-              palmares={[]}
+              actionImage="/WhatsApp_Image_2026-06-21_at_14.18.31.jpeg"
+              palmares={[
+                "Championne de France par équipes 2026",
+                "Championne de France Élite en double mixte 2025 (avec Jean-Charles Valladont)",
+                "Double championne d'Europe U21 en 2024 (mixte et équipe femme)",
+                "Médaille de bronze par équipe en Grand Prix européen senior"
+              ]}
               worldRanking={rankings[43740]}
               isEven={true} />
             
