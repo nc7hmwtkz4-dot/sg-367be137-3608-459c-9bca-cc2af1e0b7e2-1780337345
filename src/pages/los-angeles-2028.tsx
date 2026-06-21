@@ -140,6 +140,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Anaëlle Florent"
               country="FRA"
               flag="🇫🇷"
+              actionImage="/IMG_6392.JPG"
               stats={{ discipline: "Arc à Poulies", bestScore: "701/720" }}
               palmares={[
                 "5e en double mixte aux Championnats d'Europe 2026",
