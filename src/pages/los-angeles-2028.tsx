@@ -190,7 +190,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Alexis Renaudineau"
               country="FRA"
               flag="🇫🇷"
-              profileImage="/WhatsApp_Image_2026-06-04_at_15.43.06_1_.jpeg"
+              profileImage="/IMG_6321_copy.jpg"
               actionImage="/YWC23_R3X_3247.jpg"
               palmares={[
               "Médaille d'or à la Youth Cup de Ruse (BUL) 2026",
