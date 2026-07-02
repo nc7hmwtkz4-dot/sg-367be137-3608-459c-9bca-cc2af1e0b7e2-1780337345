@@ -163,7 +163,11 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇨🇭"
               profileImage="/DA6_5642-3.jpg"
               actionImage="/SYG7979.jpg"
-              palmares={[]}
+              palmares={[
+                "Médaille de bronze au Championnat de France D1 par équipes 2026",
+                "Médaille d'argent au Championnat de France D1 par équipes 2025",
+                "Médaille de bronze au Championnat de Suisse Indoor double mixte 2026"
+              ]}
               worldRanking={rankings[5974]}
               isEven={true}>
               
