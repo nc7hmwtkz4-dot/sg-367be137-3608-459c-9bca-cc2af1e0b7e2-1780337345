@@ -165,8 +165,12 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/SYG7979.jpg"
               palmares={[]}
               worldRanking={rankings[5974]}
-              isEven={true} />
-            
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Après une première carrière internationale remarquable, débutée en 2006 sous les couleurs de l'équipe de France puis poursuivie de 2015 à 2016 sous la bannière helvétique avec de nombreux podiums à son actif, Thomas s'est consacré pendant près d'une décennie à la gestion des compétitions internationales pour le compte de la Fédération mondiale de tir à l'arc. En 2026, il décide de reprendre la compétition avec un objectif clair : décrocher la qualification olympique pour la Suisse et participer aux Jeux de Los Angeles 2028.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Franck Eyeni"
