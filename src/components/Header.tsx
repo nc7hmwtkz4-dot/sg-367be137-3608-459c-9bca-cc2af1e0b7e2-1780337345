@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe, Facebook, Instagram, Music } from "lucide-react";
+import { Phone, Mail, Globe, Facebook, Instagram, Music, Languages } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
-  const isOnLA2028 = router.pathname === "/los-angeles-2028";
+  const isEnglish = router.pathname.startsWith('/en');
+  const isOnLA2028 = router.pathname.includes('los-angeles-2028');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,20 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const getLA2028Link = () => {
+    if (isOnLA2028) {
+      return isEnglish ? '/en' : '/';
+    }
+    return isEnglish ? '/en/los-angeles-2028' : '/los-angeles-2028';
+  };
+
+  const getLanguageLink = () => {
+    if (isEnglish) {
+      return isOnLA2028 ? '/los-angeles-2028' : '/';
+    }
+    return isOnLA2028 ? '/en/los-angeles-2028' : '/en';
+  };
 
   return (
     <header
@@ -43,16 +58,25 @@ export function Header() {
             </div>
           </div>
 
-          <Link
-            href={isOnLA2028 ? "/" : "/los-angeles-2028"}
-            className="hidden lg:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-foreground border border-olympic-gold/30 rounded-full hover:border-olympic-gold/60 hover:bg-olympic-gold/5 transition-all duration-300 relative group/link shadow-sm">
-            
-            <span className="text-olympic-gold text-xs">●</span>
-            <span className="relative">Projet Los Angeles 2028
+          <div className="flex items-center gap-3 md:gap-4">
+            <Link
+              href={getLanguageLink()}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-foreground/70 hover:text-foreground border border-border/50 rounded-full hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 shadow-sm">
+              <Languages className="w-3.5 h-3.5" />
+              <span>{isEnglish ? 'FR' : 'EN'}</span>
+            </Link>
 
-            </span>
-            <span className="text-olympic-gold opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 text-xs">→</span>
-          </Link>
+            <Link
+              href={getLA2028Link()}
+              className="hidden lg:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-foreground border border-olympic-gold/30 rounded-full hover:border-olympic-gold/60 hover:bg-olympic-gold/5 transition-all duration-300 relative group/link shadow-sm">
+              
+              <span className="text-olympic-gold text-xs">●</span>
+              <span className="relative">
+                {isOnLA2028 ? (isEnglish ? 'Back to Home' : 'Retour à l\'accueil') : (isEnglish ? 'LA 2028 Project' : 'Projet Los Angeles 2028')}
+              </span>
+              <span className="text-olympic-gold opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 text-xs">→</span>
+            </Link>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-xs md:text-sm">
             <a
