@@ -243,7 +243,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Maia Tincu"
               country="FRA"
               flag="🇫🇷"
-              profileImage="/IMG_5182.JPG"
+              profileImage="/WhatsApp_Image_2026-06-22_at_14.52.12.jpeg"
               actionImage="/WhatsApp_Image_2026-06-21_at_14.18.31.jpeg"
               palmares={[
                 "Championne de France par équipes 2026",
