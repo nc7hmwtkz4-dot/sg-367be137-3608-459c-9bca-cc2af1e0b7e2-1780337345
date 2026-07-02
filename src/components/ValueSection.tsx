@@ -73,19 +73,24 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
               <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`
             }>
-                {stats.map((stat, idx) => (
-                  <div key={idx} className={`bg-white/10 backdrop-blur-sm border-2 border-${stat.color} rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all`}>
-                    <div className={`text-5xl md:text-6xl font-bold text-${stat.color} mb-3`}>
-                      {stat.value}
+                {stats.map((stat, idx) => {
+                  const borderColor = stat.color === "accent" ? "border-accent" : stat.color === "secondary" ? "border-secondary" : "border-primary";
+                  const textColor = stat.color === "accent" ? "text-accent" : stat.color === "secondary" ? "text-secondary" : "text-primary";
+                  
+                  return (
+                    <div key={idx} className={`bg-white/10 backdrop-blur-sm border-2 ${borderColor} rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all`}>
+                      <div className={`text-5xl md:text-6xl font-bold ${textColor} mb-3`}>
+                        {stat.value}
+                      </div>
+                      <div className="text-lg md:text-xl font-semibold text-white mb-2">
+                        {stat.label}
+                      </div>
+                      <div className="text-sm text-white/80">
+                        {stat.sublabel}
+                      </div>
                     </div>
-                    <div className="text-lg md:text-xl font-semibold text-white mb-2">
-                      {stat.label}
-                    </div>
-                    <div className="text-sm text-white/80">
-                      {stat.sublabel}
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div className={`flex flex-wrap gap-4 md:gap-6 justify-center text-base md:text-lg lg:text-xl transition-all duration-1000 delay-300 ${
