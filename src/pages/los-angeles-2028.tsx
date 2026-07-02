@@ -191,6 +191,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Marcelle Diombo"
               country="CIV"
               flag="🇨🇮"
+              profileImage="/IMG_6544.JPG"
+              actionImage="/IMG_6515.JPG"
               stats={{ discipline: "Arc Classique" }}
               palmares={[
                 "Médaille d'or aux Jeux Africains 2019 – Arc classique individuel",
