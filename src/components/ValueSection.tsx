@@ -69,21 +69,21 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
                   <div className="text-5xl md:text-6xl font-bold text-accent mb-3">
                     2M€
                   </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">
-                    Retombées Directes
-                  </div>
-                  <div className="text-sm text-white/80">
-                    Tournoi 2026
-                  </div>
+                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Direct financial impact
+
+                </div>
+                  <div className="text-sm text-white/80">2026 Tournament
+
+                </div>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-sm border-2 border-secondary rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all">
                   <div className="text-5xl md:text-6xl font-bold text-secondary mb-3">
                     400K€
                   </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">
-                    Impact Indirect
-                  </div>
+                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Global yearly impact
+
+                </div>
                   <div className="text-sm text-white/80">
                     Par an
                   </div>
@@ -93,26 +93,26 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
                   <div className="text-5xl md:text-6xl font-bold text-primary mb-3">
                     2350
                   </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">
-                    Visiteurs
-                  </div>
-                  <div className="text-sm text-white/80">
-                    3,5 jours moyenne
-                  </div>
+                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Visitors
+
+                </div>
+                  <div className="text-sm text-white/80">3,5 average days
+
+                </div>
                 </div>
               </div>
 
               <div className={`flex flex-wrap gap-4 md:gap-6 justify-center text-base md:text-lg lg:text-xl transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`
             }>
-                {keywords.map((keyword, idx) => (
-                  <span
-                    key={idx}
-                    className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full font-medium text-white"
-                  >
+                {keywords.map((keyword, idx) =>
+              <span
+                key={idx}
+                className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full font-medium text-white">
+                
                     {keyword}
                   </span>
-                ))}
+              )}
               </div>
 
               <div className={`transition-all duration-1000 delay-500 ${
