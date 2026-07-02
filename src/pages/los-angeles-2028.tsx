@@ -188,6 +188,26 @@ export default function LosAngeles2028({ rankings }: PageProps) {
             </AthleteCard>
 
             <AthleteCard
+              name="Marcelle Diombo"
+              country="CIV"
+              flag="🇨🇮"
+              stats={{ discipline: "Arc Classique" }}
+              palmares={[
+                "Médaille d'or aux Jeux Africains 2019 – Arc classique individuel",
+                "Médaille d'argent aux Jeux Africains 2019 – Arc classique par équipes",
+                "Médaille d'or au Championnat d'Afrique 2022 – Arc classique par équipes",
+                "Médaille d'argent au Championnat d'Afrique 2022 – Arc classique équipe mixte",
+                "Médaille d'argent au Championnat d'Afrique 2023 – Arc classique équipe mixte"
+              ]}
+              worldRanking={null}
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Née le 31 janvier 2003 à Toupah, Esmei Anne-Marcelle Diombo s'est imposée comme l'une des meilleures archères du continent africain. Spécialiste de l'arc classique, elle a marqué les esprits en 2019 aux Jeux Africains de Rabat, où elle remporte la médaille d'or individuelle et décroche une qualification olympique historique pour la Côte d'Ivoire aux Jeux de Tokyo. Reconnue pour sa régularité et son mental d'acier lors des grands rendez-vous, elle multiplie les podiums continentaux et s'affirme comme une figure majeure du tir à l'arc ivoirien. Véritable ambassadrice du sport africain, elle inspire toute une génération et porte fièrement les couleurs de la Côte d'Ivoire avec pour objectif Los Angeles 2028.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
               name="Alexis Renaudineau"
               country="FRA"
               flag="🇫🇷"
