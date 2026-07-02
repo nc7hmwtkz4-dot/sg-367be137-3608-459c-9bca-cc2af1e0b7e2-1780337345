@@ -272,6 +272,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Iban Bariteaud"
               country="FRA"
               flag="🇫🇷"
+              profileImage="/IMG_6366.JPG"
+              actionImage="/IMG_6292.JPG"
               palmares={[]}
               worldRanking={rankings[41671]}
               isEven={true} />
