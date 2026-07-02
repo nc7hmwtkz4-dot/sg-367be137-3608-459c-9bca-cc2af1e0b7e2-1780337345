@@ -66,6 +66,8 @@ export default function Home(): ReactElement {
             image={value.imageUrl}
             details={value.details}
             gallery={value.gallery}
+            buttonText="Discover more"
+            galleryText="Gallery"
           />
         ))}
         <CTASection />

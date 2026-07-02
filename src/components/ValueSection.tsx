@@ -17,9 +17,11 @@ export interface ValueSectionProps {
   image: string;
   details: string;
   gallery: GalleryItem[];
+  buttonText?: string;
+  galleryText?: string;
 }
 
-export function ValueSection({ index, id, title, keywords, image, details, gallery }: ValueSectionProps) {
+export function ValueSection({ index, id, title, keywords, image, details, gallery, buttonText = "En savoir plus", galleryText = "Galerie" }: ValueSectionProps) {
   const [showDetails, setShowDetails] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -120,7 +122,7 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
                 onClick={() => setShowDetails(true)}
                 className="mt-6 px-6 md:px-8 py-3 md:py-4 bg-white text-primary font-semibold rounded-full hover:bg-white/90 transition-all inline-flex items-center gap-2 text-base md:text-lg">
                 
-                  En savoir plus
+                  {buttonText}
                   <ChevronDown className="w-5 h-5" />
                 </button>
               </div>
@@ -147,7 +149,7 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
                 onClick={() => setShowDetails(true)}
                 className="px-6 md:px-8 py-3 md:py-4 bg-white text-primary font-semibold rounded-full hover:bg-white/90 transition-all inline-flex items-center justify-center gap-2 text-base md:text-lg">
                 
-                  En savoir plus
+                  {buttonText}
                   <ChevronDown className="w-5 h-5" />
                 </button>
 
@@ -157,7 +159,7 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
                 className="px-6 md:px-8 py-3 md:py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center gap-2 text-base md:text-lg">
                 
                     <Images className="w-5 h-5" />
-                    Galerie
+                    {galleryText}
                   </button>
               }
               </div>
