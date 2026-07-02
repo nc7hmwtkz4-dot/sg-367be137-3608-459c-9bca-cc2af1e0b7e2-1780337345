@@ -37,7 +37,27 @@ export default function Home(): ReactElement {
       keywords: ["Développement", "Tourisme", "Emploi"],
       imageUrl: "/CyrilTONDUT066.jpg",
       details: "Au-delà de l'aspect sportif, l'Arc Club de Nîmes est un acteur économique majeur pour la ville.\n\nImpact économique direct du tournoi 2026 :\n• 2350 participants (athlètes + accompagnants)\n• Dépense moyenne : 200€ par personne et par jour\n• Séjour moyen : 3,5 jours\n• Retombées économiques directes : 2 000 000€\n• +1500 spectateurs venant assister au tournoi\n\nImpact économique indirect annuel :\n• Embauche de salariés permanents\n• Achats d'équipement et de matériel sportif\n• Prestations de services dans les commerces locaux\n• Investissements pour le fonctionnement du club\n• Retombées indirectes estimées : 400 000€ par an\n\nNotre tournoi international est le deuxième événement de la ville de Nîmes après la Féria en termes de retombées économiques.\n\nIl génère une activité essentielle en plein mois de janvier (hors saison touristique) pour les domaines de l'hôtellerie, de la restauration et des services locaux.\n\nPrès de 30 ans d'existence, une référence mondiale qui attire les meilleurs archers internationaux qui apprécient la qualité de l'organisation et l'expérience unique du tournoi tricolore.\n\nAprès une année record en 2025 avec 1238 archers participants, le tournoi poursuit sa croissance, avec 1350 athlètes participants en 2026.",
-      gallery: [] as GalleryItem[]
+      gallery: [] as GalleryItem[],
+      stats: [
+        {
+          value: "2M€",
+          label: "Impact financier direct",
+          sublabel: "Tournoi 2026",
+          color: "accent" as const
+        },
+        {
+          value: "400K€",
+          label: "Impact global",
+          sublabel: "par an",
+          color: "secondary" as const
+        },
+        {
+          value: "2350",
+          label: "Visiteurs",
+          sublabel: "3,5 jours en moyenne",
+          color: "primary" as const
+        }
+      ]
     },
     {
       id: "engagement",
@@ -64,6 +84,7 @@ export default function Home(): ReactElement {
             image={value.imageUrl}
             details={value.details}
             gallery={value.gallery}
+            stats={'stats' in value ? value.stats : undefined}
           />
         ))}
         <CTASection />

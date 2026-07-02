@@ -37,7 +37,27 @@ export default function Home(): ReactElement {
       keywords: ["Development", "Tourism", "Employment"],
       imageUrl: "/CyrilTONDUT066.jpg",
       details: "Beyond the sporting aspect, Arc Club de Nîmes is a major economic player for the city.\n\nDirect economic impact of the 2026 tournament:\n• 2350 participants (athletes + companions)\n• Average spending: €200 per person per day\n• Average stay: 3.5 days\n• Direct economic returns: €2,000,000\n• +1500 spectators attending the tournament\n\nAnnual indirect economic impact:\n• Hiring permanent employees\n• Purchases of sports equipment and materials\n• Service providers in local businesses\n• Investments for club operations\n• Estimated indirect returns: €400,000 per year\n\nOur international tournament is the city of Nîmes' second-largest event after the Féria in terms of economic returns.\n\nIt generates essential activity in the middle of January (off-season) for the hotel, restaurant and local service sectors.\n\nNearly 30 years of existence, a worldwide reference that attracts the best international archers who appreciate the quality of organization and unique experience of the French tournament.\n\nAfter a record year in 2025 with 1238 participating archers, the tournament continues to grow, with 1350 participating athletes in 2026.",
-      gallery: [] as GalleryItem[]
+      gallery: [] as GalleryItem[],
+      stats: [
+        {
+          value: "2M€",
+          label: "Direct financial impact",
+          sublabel: "2026 Tournament",
+          color: "accent" as const
+        },
+        {
+          value: "400K€",
+          label: "Global impact",
+          sublabel: "yearly",
+          color: "secondary" as const
+        },
+        {
+          value: "2350",
+          label: "Visitors",
+          sublabel: "3.5 average days",
+          color: "primary" as const
+        }
+      ]
     },
     {
       id: "engagement",
@@ -68,6 +88,7 @@ export default function Home(): ReactElement {
             gallery={value.gallery}
             buttonText="Discover more"
             galleryText="Gallery"
+            stats={'stats' in value ? value.stats : undefined}
           />
         ))}
         <CTASection 

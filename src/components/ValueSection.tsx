@@ -9,6 +9,13 @@ export type GalleryItem = {
   description: string;
 };
 
+export type StatBox = {
+  value: string;
+  label: string;
+  sublabel: string;
+  color: "accent" | "secondary" | "primary";
+};
+
 export interface ValueSectionProps {
   index: number;
   id: string;
@@ -19,9 +26,10 @@ export interface ValueSectionProps {
   gallery: GalleryItem[];
   buttonText?: string;
   galleryText?: string;
+  stats?: StatBox[];
 }
 
-export function ValueSection({ index, id, title, keywords, image, details, gallery, buttonText = "En savoir plus", galleryText = "Galerie" }: ValueSectionProps) {
+export function ValueSection({ index, id, title, keywords, image, details, gallery, buttonText = "En savoir plus", galleryText = "Galerie", stats }: ValueSectionProps) {
   const [showDetails, setShowDetails] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -60,46 +68,24 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
             {title}
           </h2>
 
-          {isEconomieSection ?
+          {isEconomieSection && stats ?
           <div className="space-y-8 md:space-y-12 pt-8">
               <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`
             }>
-                <div className="bg-white/10 backdrop-blur-sm border-2 border-accent rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all">
-                  <div className="text-5xl md:text-6xl font-bold text-accent mb-3">
-                    2M€
+                {stats.map((stat, idx) => (
+                  <div key={idx} className={`bg-white/10 backdrop-blur-sm border-2 border-${stat.color} rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all`}>
+                    <div className={`text-5xl md:text-6xl font-bold text-${stat.color} mb-3`}>
+                      {stat.value}
+                    </div>
+                    <div className="text-lg md:text-xl font-semibold text-white mb-2">
+                      {stat.label}
+                    </div>
+                    <div className="text-sm text-white/80">
+                      {stat.sublabel}
+                    </div>
                   </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Direct financial impact
-
-                </div>
-                  <div className="text-sm text-white/80">2026 Tournament
-
-                </div>
-                </div>
-
-                <div className="bg-white/10 backdrop-blur-sm border-2 border-secondary rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all">
-                  <div className="text-5xl md:text-6xl font-bold text-secondary mb-3">
-                    400K€
-                  </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Global impact
-
-                </div>
-                  <div className="text-sm text-white/80">yearly
-
-                </div>
-                </div>
-
-                <div className="bg-white/10 backdrop-blur-sm border-2 border-primary rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all">
-                  <div className="text-5xl md:text-6xl font-bold text-primary mb-3">
-                    2350
-                  </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Visitors
-
-                </div>
-                  <div className="text-sm text-white/80">3,5 average days
-
-                </div>
-                </div>
+                ))}
               </div>
 
               <div className={`flex flex-wrap gap-4 md:gap-6 justify-center text-base md:text-lg lg:text-xl transition-all duration-1000 delay-300 ${
