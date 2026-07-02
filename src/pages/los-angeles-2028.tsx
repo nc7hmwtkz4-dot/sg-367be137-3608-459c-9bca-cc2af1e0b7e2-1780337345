@@ -181,6 +181,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               country="CIV"
               flag="🇨🇮"
               profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
+              actionImage="/IMG_6332.JPG"
               palmares={[
                 "Médaille d'or au Championnat d'Afrique 2025 (individuel)",
                 "Médaille d'argent au Championnat d'Afrique 2023 (par équipe mixte)",
@@ -192,7 +193,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               isEven={false}>
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Figure majeure du tir à l'arc africain, Franck Eyeni incarne l'excellence sportive ivoirienne sur la scène continentale. Champion d'Afrique 2025 en individuel, détenteur du record d'Afrique et médaillé à de multiples reprises lors des championnats continentaux, il a déjà goûté à l'expérience olympique en participant aux Jeux Olympiques de la Jeunesse 2018. Formé au sein de l'Arc Club de Nîmes, il représente fièrement la Côte d'Ivoire en mettant toute sa précision et sa maîtrise avec un objectif clair : briller à Los Angeles 2028.
+                Originaire d'Aboisso en Côte d'Ivoire, Franck Eyeni incarne la persévérance et l'ambition. Dans sa quête d'une qualification pour les Jeux Olympiques de Paris 2024, il fait le choix audacieux de quitter son pays natal pour rejoindre l'Arc Club de Nîmes, institution majeure du tir à l'arc européen. S'il échoue de justesse aux portes de la sélection olympique parisienne, cette expérience fondatrice forge chez lui un mental d'acier. Animé d'une détermination intacte, Franck choisit alors de s'installer durablement en France pour concilier études supérieures et sport de haut niveau. Récemment couronné d'or sur le continent africain en 2025 et actuel détenteur du record d'Afrique, il déploie aujourd'hui toute sa précision et sa maîtrise avec un objectif clair : la qualification pour les Jeux Olympiques de Los Angeles 2028.
               </p>
             </AthleteCard>
 
