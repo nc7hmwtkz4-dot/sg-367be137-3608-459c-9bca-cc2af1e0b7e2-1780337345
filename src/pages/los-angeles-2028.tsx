@@ -140,6 +140,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Anaëlle Florent"
               country="FRA"
               flag="🇫🇷"
+              profileImage="/IMG_6455.JPG"
               actionImage="/IMG_6392.JPG"
               stats={{ discipline: "Arc à Poulies", bestScore: "701/720" }}
               palmares={[
