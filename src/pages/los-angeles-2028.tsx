@@ -222,7 +222,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               "Médaille d'or au Championnat du monde jeune par équipe 2023"]
               }
               worldRanking={rankings[46647]}
-              isEven={true}>
+              isEven={false}>
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune tout en intégrant l'équipe de France senior dès 2026, une performance pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
 
@@ -237,7 +237,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/SYG2932.jpg"
               palmares={[]}
               worldRanking={rankings[45361]}
-              isEven={false} />
+              isEven={true} />
             
 
             <AthleteCard
@@ -253,7 +253,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
                 "Médaille de bronze par équipe en Grand Prix européen senior"
               ]}
               worldRanking={rankings[43740]}
-              isEven={true}>
+              isEven={false}>
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 Membre du pôle France relève de Bordeaux depuis 2022, Maia s'est imposée comme l'une des révélations du tir à l'arc français. Invincible en Junior Cup européenne depuis 2023 et accumulant les médailles nationales en U18 et U21, elle a marqué les esprits avec son doublé de championne d'Europe Junior 2024. Désormais tournée vers l'équipe de France senior, elle affiche une ambition claire : intégrer l'élite européenne et mondiale pour viser Los Angeles 2028.
@@ -266,7 +266,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               palmares={[]}
               worldRanking={rankings[41671]}
-              isEven={false} />
+              isEven={true} />
             
           </div>
         </div>
