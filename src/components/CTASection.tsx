@@ -2,7 +2,19 @@ import { Mail, Phone } from "lucide-react";
 import { HomeActionLink } from "@/components/home/HomeActionLink";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-export function CTASection() {
+export interface CTASectionProps {
+  title?: string;
+  description?: string;
+  imageAlt?: string;
+  photoCredit?: string;
+}
+
+export function CTASection({ 
+  title = "Devenez Partenaire",
+  description = "Rejoignez l'aventure du 1er club français de tir à l'arc et associez votre marque à l'excellence sportive.",
+  imageAlt = "Devenez partenaire",
+  photoCredit = "Crédit photo ©World Archery"
+}: CTASectionProps) {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 });
 
   return (
@@ -14,7 +26,7 @@ export function CTASection() {
       <div className="absolute inset-0">
         <img
           src="/devenez-partenaire.jpg"
-          alt="Devenez partenaire"
+          alt={imageAlt}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/80 to-primary/90" />
@@ -27,7 +39,7 @@ export function CTASection() {
       >
         <div className="max-w-3xl mx-auto space-y-8 md:space-y-12">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight px-2">
-            Devenez Partenaire
+            {title}
           </h2>
 
           <p
@@ -35,8 +47,7 @@ export function CTASection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Rejoignez l'aventure du 1er club français de tir à l'arc
-            et associez votre marque à l'excellence sportive.
+            {description}
           </p>
 
           <div
@@ -71,7 +82,7 @@ export function CTASection() {
         }`}
       >
         <p className="text-white/40 text-[10px] md:text-xs font-light">
-          Crédit photo ©World Archery
+          {photoCredit}
         </p>
       </div>
     </section>

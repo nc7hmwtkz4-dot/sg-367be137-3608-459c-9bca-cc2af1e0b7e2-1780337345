@@ -70,7 +70,12 @@ export default function Home(): ReactElement {
             galleryText="Gallery"
           />
         ))}
-        <CTASection />
+        <CTASection 
+          title="Become a Partner"
+          description="Join the adventure of France's leading archery club and associate your brand with sporting excellence."
+          imageAlt="Become a partner"
+          photoCredit="Photo credit ©World Archery"
+        />
       </main>
       <ScrollNavigation sections={values} />
     </>
