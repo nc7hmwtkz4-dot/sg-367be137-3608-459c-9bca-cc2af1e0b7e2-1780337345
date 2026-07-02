@@ -81,12 +81,12 @@ export function ValueSection({ index, id, title, keywords, image, details, galle
                   <div className="text-5xl md:text-6xl font-bold text-secondary mb-3">
                     400K€
                   </div>
-                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Global yearly impact
+                  <div className="text-lg md:text-xl font-semibold text-white mb-2">Global impact
 
                 </div>
-                  <div className="text-sm text-white/80">
-                    Par an
-                  </div>
+                  <div className="text-sm text-white/80">yearly
+
+                </div>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-sm border-2 border-primary rounded-2xl p-6 md:p-8 text-center hover:bg-white/20 transition-all">
