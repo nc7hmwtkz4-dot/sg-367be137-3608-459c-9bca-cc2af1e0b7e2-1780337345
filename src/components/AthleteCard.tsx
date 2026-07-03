@@ -27,6 +27,11 @@ const getMedalColor = (palmares: string): string => {
   return "text-olympic-gold";
 };
 
+const isNonPodiumPlacement = (palmares: string): boolean => {
+  const lowerText = palmares.toLowerCase();
+  return lowerText.match(/\b[4-6](ème|th|e)\b/) !== null;
+};
+
 const extractYear = (palmares: string): number => {
   const yearMatch = palmares.match(/\b(20\d{2})\b/);
   return yearMatch ? parseInt(yearMatch[1], 10) : 0;
@@ -132,6 +137,7 @@ export function AthleteCard({
                 sortPalmaresByYear(palmares).map((titre, idx) => {
                     const selectionNumber = extractSelectionNumber(titre);
                     const isSelection = selectionNumber !== null;
+                    const isNonPodium = isNonPodiumPlacement(titre);
                     
                     return (
                       <div key={idx} className="flex items-center gap-3 p-3 bg-muted/30 rounded-lg">
@@ -142,8 +148,10 @@ export function AthleteCard({
                               {selectionNumber}
                             </span>
                           </div>
-                        ) : (
+                        ) : !isNonPodium ? (
                           <Trophy className={`w-4 h-4 ${getMedalColor(titre)} flex-shrink-0`} />
+                        ) : (
+                          <div className="w-4 flex-shrink-0"></div>
                         )}
                         <span className="font-semibold text-foreground">{titre}</span>
                       </div>
