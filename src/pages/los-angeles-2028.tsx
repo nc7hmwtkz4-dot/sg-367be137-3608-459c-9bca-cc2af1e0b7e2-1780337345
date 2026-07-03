@@ -244,10 +244,22 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               profileImage="/R3X_6040.jpg"
               actionImage="/SYG2932.jpg"
-              palmares={[]}
+              stats={{ discipline: "Arc Classique", bestScore: "672/720", ranking: "Top 15 France" }}
+              palmares={[
+                "Médaille d'argent individuelle au Championnat d'Europe Jeune, Lilleshall 2022",
+                "Médaille d'or individuelle à la World Indoor Series, Nîmes 2023",
+                "4ème par équipe au Championnat du Monde de la Jeunesse, Winnipeg 2025",
+                "6ème individuelle et par équipe à la World Cup 1, Puebla 2026",
+                "5ème en double mixte à la World Cup 2, Shanghai 2026",
+                "5ème individuelle et par équipe au Championnat d'Europe Senior, Antalya 2026"
+              ]}
               worldRanking={rankings[45361]}
-              isEven={true} />
-            
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Mila Fremery-Delestan est une archère française en pleine ascension. Vice-championne d'Europe jeune en 2022, vainqueure de l'Indoor World Series à Nîmes en 2023, elle s'est rapidement imposée au plus haut niveau international avec plusieurs Top 10 en Coupe du monde et aux Championnats d'Europe seniors en 2026. Son objectif est désormais clair : poursuivre sa progression pour décrocher une sélection aux Jeux olympiques de 2028.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Maia Tincu"
