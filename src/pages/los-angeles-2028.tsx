@@ -106,12 +106,19 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               profileImage="/IMG_3209.HEIC"
               actionImage="/R3X_2810.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }}
-              palmares={[]}
+              palmares={[
+                "Vainqueure de la Finale des Indoor World Series 2026",
+                "Vainqueure de la Coupe du Monde Indoor de Nîmes 2026",
+                "Championne de France Senior Salle 2026",
+                "Vainqueure de la Coupe du Monde Indoor de Taipei 2025",
+                "Vice-championne d'Europe Indoor Senior 2025",
+                "Championne de France Élite 2024"
+              ]}
               worldRanking={rankings[27419]}
               isEven={false}>
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Archère talentueuse en constante progression, Victoria combine technique rigoureuse et mental d'acier pour viser l'excellence olympique.
+                Initiée au tir à l'arc à Montpellier dès l'âge de 9 ans, Victoria affine sa technique pendant 4 années à Nîmes avant d'intégrer les structures de haut niveau à 17 ans. Son parcours la mène successivement au Pôle Espoirs de Nantes, au Pôle France Relève de Nancy, puis à l'INSEP en 2023 où, à 20 ans, elle rejoint l'équipe de France élite. Avec un classement mondial record à la 7ᵉ place en 2025 et une série de titres internationaux impressionnante en salle, Victoria s'impose comme l'une des archères françaises les plus prometteuses de sa génération. Parallèlement à ses ambitions olympiques pour Los Angeles 2028, elle prépare son diplôme DEJEPS, témoignant de sa volonté de transmettre son expérience et de contribuer durablement au développement du tir à l'arc.
               </p>
             </AthleteCard>
 
