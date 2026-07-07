@@ -103,7 +103,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Victoria Sebastian"
               country="FRA"
               flag="🇫🇷"
-              profileImage="/IMG_3209.HEIC"
+              profileImage="/WhatsApp_Image_2026-07-06_at_18.32.38.jpeg"
               actionImage="/R3X_2810.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }}
               palmares={[
