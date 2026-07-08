@@ -294,9 +294,18 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               profileImage="/IMG_6366.JPG"
               actionImage="/IMG_6292.JPG"
-              palmares={[]}
+              palmares={[
+                "Médaille de bronze au Championnat de France D1 par équipes 2026",
+                "5e du Championnat de France élite 2025",
+                "Champion du Monde jeune en 2021"
+              ]}
               worldRanking={rankings[41671]}
-              isEven={true} />
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Jeune prodige du tir à l'arc français, Iban s'est révélé sur la scène internationale en décrochant le titre de Champion du Monde jeune en 2021. Poursuivant sa progression parmi l'élite nationale, il s'est classé 5e du Championnat de France élite en 2025 avant de remporter la médaille de bronze au Championnat de France D1 par équipes en 2026 avec son club. Doté d'un immense potentiel, il s'entraîne désormais avec une détermination sans faille pour représenter la France aux Jeux Olympiques de Los Angeles 2028.
+              </p>
+            </AthleteCard>
             
           </div>
         </div>

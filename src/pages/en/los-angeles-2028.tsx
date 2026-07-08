@@ -281,9 +281,18 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               profileImage="/IMG_6366.JPG"
               actionImage="/IMG_6292.JPG"
-              palmares={[]}
+              palmares={[
+                "Bronze medal at the 2026 French D1 Championship (team event)",
+                "5th at the 2025 Elite French Championship",
+                "2021 Youth World Champion"
+              ]}
               worldRanking={rankings[41671]}
-              isEven={true} />
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                A young prodigy of French archery, Iban made his mark on the international stage by winning the Youth World Champion title in 2021. Continuing his progression among the national elite, he finished 5th at the Elite French Championship in 2025 before securing the bronze medal at the French D1 Championship team event in 2026. Gifted with immense potential, he now trains with unwavering determination to represent France at the Los Angeles 2028 Olympic Games.
+              </p>
+            </AthleteCard>
             
           </div>
         </div>
