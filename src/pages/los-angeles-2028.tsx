@@ -297,7 +297,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               palmares={[
                 "Médaille de bronze au Championnat de France D1 par équipes 2026",
                 "5e du Championnat de France élite 2025",
-                "Champion du Monde jeune en 2021"
+                "Champion du Monde U18 en 2021"
               ]}
               worldRanking={rankings[41671]}
               isEven={true}>
