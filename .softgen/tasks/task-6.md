@@ -2,20 +2,12 @@
 title: Tri chronologique du palmarès des athlètes
 status: done
 priority: high
-type: feature
-tags:
-- data
-- sorting
+type: fe
 ---
-
 ## Notes
-:
-- Le palmarès des athlètes doit être affiché par ordre chronologique décroissant.
-- La source de données contient du texte libre avec des années (ex: "Champion d'Europe 2024").
-- Une extraction dynamique est nécessaire pour trier l'affichage avant le rendu de chaque carte d'athlète.
+Le palmarès doit afficher en premier la médaille la plus récente, puis par ordre chronologique descendant.
 
 ## Checklist
-:
-- [x] Analyser chaque ligne de palmarès pour extraire automatiquement l'année de la compétition.
-- [x] Réorganiser l'affichage pour présenter systématiquement la médaille la plus récente en premier.
+- [x] Extraire l'année de chaque ligne de palmarès.
+- [x] Trier le tableau en fonction de l'année (ordre décroissant).
 - [x] Gérer le tri par défaut pour placer les médailles sans année explicite en fin de liste.
