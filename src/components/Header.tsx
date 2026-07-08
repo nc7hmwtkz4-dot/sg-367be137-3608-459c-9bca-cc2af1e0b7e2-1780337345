@@ -37,7 +37,7 @@ export function Header() {
       {!isOnLA2028 && (
         <Link
           href={isEnglish ? '/en/los-angeles-2028' : '/los-angeles-2028'}
-          className="bg-primary text-slate-900 w-full py-2 px-4 text-center text-sm font-bold hover:bg-primary/90 transition-colors flex justify-center items-center gap-2 group shadow-sm"
+          className="bg-red-600 text-white w-full py-2 px-4 text-center text-sm font-bold hover:bg-red-700 transition-colors flex justify-center items-center gap-2 group shadow-sm"
         >
           <span>{isEnglish ? "On the road to the Olympics: Discover our LA 2028 project" : "En route pour les JO : Découvrez notre projet LA 2028"}</span>
           <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
