@@ -103,15 +103,22 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               name="Victoria Sebastian"
               country="FRA"
               flag="🇫🇷"
-              profileImage="/IMG_3209.HEIC"
+              profileImage="/WhatsApp_Image_2026-07-06_at_18.32.38.jpeg"
               actionImage="/R3X_2810.jpg"
               stats={{ discipline: "Recurve Bow", bestScore: "665/720", ranking: "Top 20 France" }}
-              palmares={[]}
+              palmares={[
+                "Champion of the 2026 Indoor World Series Final",
+                "Champion of the 2026 Nîmes Indoor World Cup",
+                "2026 French Senior Indoor Champion",
+                "Champion of the 2025 Taipei Indoor World Cup",
+                "Silver medal at the 2025 Senior Indoor European Championship",
+                "2024 French Elite Champion"
+              ]}
               worldRanking={rankings[27419]}
               isEven={false}>
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Talented archer in constant progression, Victoria combines rigorous technique and mental strength to aim for Olympic excellence.
+                Introduced to archery in Montpellier at the age of 9, Victoria refined her technique for 4 years in Nîmes before joining high-level structures at 17. Her journey led her successively to the Pôle Espoirs in Nantes, the Pôle France Relève in Nancy, and then to INSEP in 2023 where, at 20, she joined the elite French national team. With a record world ranking of 7th place in 2025 and an impressive series of international indoor titles, Victoria stands out as one of the most promising French archers of her generation. Alongside her Olympic ambitions for Los Angeles 2028, she is preparing for her DEJEPS coaching diploma, demonstrating her desire to pass on her experience and contribute lastingly to the development of archery.
               </p>
             </AthleteCard>
 
