@@ -284,7 +284,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               palmares={[
                 "Bronze medal at the 2026 French D1 Championship (team event)",
                 "5th at the 2025 Elite French Championship",
-                "2021 Youth World Champion"
+                "2021 U18 World Champion"
               ]}
               worldRanking={rankings[41671]}
               isEven={true}>

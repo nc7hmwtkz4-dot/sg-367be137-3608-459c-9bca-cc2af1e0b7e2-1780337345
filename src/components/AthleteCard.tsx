@@ -153,7 +153,7 @@ export function AthleteCard({
 
                       <div className="w-4 flex-shrink-0"></div>
                       }
-                        <span className="font-semibold text-foreground">Champion du Monde U18 en 2021</span>
+                        <span className="font-semibold text-foreground">{titre}</span>
                       </div>);
 
                 }) :
