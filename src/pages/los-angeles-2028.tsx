@@ -88,9 +88,9 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/media_51380562_50966596_compressed.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "680/720", ranking: "Top 15 France" }}
               palmares={[
-              "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
-              "Médaille d'argent Coupe du Monde Madrid 2025"]
-              }
+                "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
+                "Médaille d'argent à la Coupe du Monde de Madrid 2025"
+              ]}
               worldRanking={rankings[32221]}
               isEven={true}>
               
@@ -107,11 +107,11 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/R3X_2810.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "665/720", ranking: "Top 20 France" }}
               palmares={[
-                "Vainqueure de la Finale des Indoor World Series 2026",
-                "Vainqueure de la Coupe du Monde Indoor de Nîmes 2026",
+                "Championne de la Finale des Indoor World Series 2026",
+                "Championne de la Coupe du Monde Indoor de Nîmes 2026",
                 "Championne de France Senior Salle 2026",
-                "Vainqueure de la Coupe du Monde Indoor de Taipei 2025",
-                "Vice-championne d'Europe Indoor Senior 2025",
+                "Championne de la Coupe du Monde Indoor de Taipei 2025",
+                "Médaille d'argent au Championnat d'Europe Indoor Senior 2025",
                 "Championne de France Élite 2024"
               ]}
               worldRanking={rankings[27419]}
@@ -130,11 +130,11 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/R3X_9396.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "692/720", ranking: "Top 10 France" }}
               palmares={[
-              "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
-              "Champion d'Europe 2024 par équipe",
-              "Médaille d'or à la Coupe du Monde de Madrid 2025 par équipe",
-              "Médaille de bronze au Championnat d'Europe 2024"]
-              }
+                "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
+                "Champion d'Europe 2024 par équipe",
+                "Champion de la Coupe du Monde de Madrid 2025 par équipe",
+                "Médaille de bronze au Championnat d'Europe 2024"
+              ]}
               worldRanking={rankings[6403]}
               isEven={true}>
               
@@ -153,7 +153,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               palmares={[
                 "5e en double mixte aux Championnats d'Europe 2026",
                 "4 sélections en Coupe du Monde 2026",
-                "Médaille de Bronze à la Coupe du Monde de Medellin 2022 par équipes (Classique)",
+                "Médaille de bronze à la Coupe du Monde de Medellin 2022 par équipes (Classique)",
                 "Championne de France D1 par équipes en 2024"
               ]}
               worldRanking={rankings[19935]}
@@ -190,7 +190,7 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
               actionImage="/IMG_6332.JPG"
               palmares={[
-                "Médaille d'or au Championnat d'Afrique 2025 (individuel)",
+                "Champion d'Afrique 2025 (individuel)",
                 "Médaille d'argent au Championnat d'Afrique 2023 (par équipe mixte)",
                 "Médaille d'argent au Championnat d'Afrique 2022 (individuel)",
                 "Record d'Afrique en arc classique (660 points)",
@@ -212,9 +212,9 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/IMG_6515.JPG"
               stats={{ discipline: "Arc Classique" }}
               palmares={[
-                "Médaille d'or aux Jeux Africains 2019 – Arc classique individuel",
+                "Championne des Jeux Africains 2019 – Arc classique individuel",
                 "Médaille d'argent aux Jeux Africains 2019 – Arc classique par équipes",
-                "Médaille d'or au Championnat d'Afrique 2022 – Arc classique par équipes",
+                "Championne d'Afrique 2022 – Arc classique par équipes",
                 "Médaille d'argent au Championnat d'Afrique 2022 – Arc classique équipe mixte",
                 "Médaille d'argent au Championnat d'Afrique 2023 – Arc classique équipe mixte"
               ]}
@@ -233,10 +233,10 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               profileImage="/IMG_6321_copy.jpg"
               actionImage="/YWC23_R3X_3247.jpg"
               palmares={[
-              "Médaille d'or à la Youth Cup de Ruse (BUL) 2026",
-              "Médaille d'or au Championnat d'Europe par équipe 2024",
-              "Médaille d'or au Championnat du monde jeune par équipe 2023"]
-              }
+                "Champion de la Youth Cup de Ruse (BUL) 2026",
+                "Champion d'Europe par équipe 2024",
+                "Champion du monde jeune par équipe 2023"
+              ]}
               worldRanking={rankings[46647]}
               isEven={false}>
               
@@ -253,8 +253,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/SYG2932.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "672/720", ranking: "Top 15 France" }}
               palmares={[
-                "Médaille d'argent individuelle au Championnat d'Europe Jeune, Lilleshall 2022",
-                "Médaille d'or individuelle à la World Indoor Series, Nîmes 2023",
+                "Médaille d'argent au Championnat d'Europe Jeune (individuel), Lilleshall 2022",
+                "Championne individuelle à la World Indoor Series, Nîmes 2023",
                 "4ème par équipe au Championnat du Monde de la Jeunesse, Winnipeg 2025",
                 "6ème individuelle et par équipe à la World Cup 1, Puebla 2026",
                 "5ème en double mixte à la World Cup 2, Shanghai 2026",
