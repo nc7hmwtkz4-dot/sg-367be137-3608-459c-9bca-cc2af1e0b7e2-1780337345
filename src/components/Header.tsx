@@ -34,15 +34,15 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col">
-      {!isOnLA2028 && (
-        <Link
-          href={isEnglish ? '/en/los-angeles-2028' : '/los-angeles-2028'}
-          className="bg-red-600 text-white w-full py-2 px-4 text-center text-sm font-bold hover:bg-red-700 transition-colors flex justify-center items-center gap-2 group shadow-sm"
-        >
+      {!isOnLA2028 &&
+      <Link
+        href={isEnglish ? '/en/los-angeles-2028' : '/los-angeles-2028'}
+        className="bg-red-600 text-white w-full py-2 px-4 text-center text-sm font-bold hover:bg-red-700 transition-colors flex justify-center items-center gap-2 group shadow-sm">
+        
           <span>{isEnglish ? "On the road to the Olympics: Discover our LA 2028 project" : "En route pour les JO : Découvrez notre projet LA 2028"}</span>
           <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
         </Link>
-      )}
+      }
       
       <div
         className={`w-full transition-all duration-500 ${
@@ -83,7 +83,7 @@ export function Header() {
                 
                 <span className="text-olympic-gold text-xs">●</span>
                 <span className="relative">
-                  {isOnLA2028 ? (isEnglish ? 'Back to Home' : 'Retour à l\'accueil') : (isEnglish ? 'LA 2028 Project' : 'Projet Los Angeles 2028')}
+                  {isOnLA2028 ? isEnglish ? 'Back to Home' : 'Retour à l\'accueil' : isEnglish ? 'LA 2028 Project' : 'Projet Los Angeles 2028'}
                 </span>
                 <span className="text-olympic-gold opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 text-xs">→</span>
               </Link>
@@ -95,7 +95,7 @@ export function Header() {
                 className="flex items-center gap-1.5 md:gap-2 text-foreground hover:text-primary transition-all duration-300 hover:scale-105 px-2 py-1 rounded-lg hover:bg-primary/10">
                 
                 <Phone className="w-3.5 h-3.5 md:w-4 md:h-4 transition-transform duration-300" />
-                <span className="hidden sm:inline">04 66 29 16 32</span>
+                <span className="hidden sm:inline">+33 4 66 29 16 32</span>
               </a>
               <a
                 href="mailto:contact@arcclubdenimes.com"
