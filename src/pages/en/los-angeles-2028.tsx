@@ -89,7 +89,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               stats={{ discipline: "Recurve Bow", bestScore: "680/720", ranking: "Top 15 France" }}
               palmares={[
               "Silver medal at the Paris 2024 Olympic Games (team event)",
-              "Silver medal at the Madrid 2025 World Cup"]
+              "Silver medal at the Madrid 2025 World Cup",
+              "U21 European Champion 2026"]
               }
               worldRanking={rankings[32221]}
               isEven={true}>

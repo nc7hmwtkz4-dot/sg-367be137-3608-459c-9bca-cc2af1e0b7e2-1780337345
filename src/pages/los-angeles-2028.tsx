@@ -89,7 +89,8 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               stats={{ discipline: "Arc Classique", bestScore: "680/720", ranking: "Top 15 France" }}
               palmares={[
                 "Médaille d'argent aux Jeux Olympiques de Paris 2024 par équipe",
-                "Médaille d'argent à la Coupe du Monde de Madrid 2025"
+                "Médaille d'argent à la Coupe du Monde de Madrid 2025",
+                "Champion d'Europe U21 2026"
               ]}
               worldRanking={rankings[32221]}
               isEven={true}>
