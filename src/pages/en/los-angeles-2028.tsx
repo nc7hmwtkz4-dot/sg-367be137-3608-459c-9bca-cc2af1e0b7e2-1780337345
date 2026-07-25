@@ -251,10 +251,22 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               flag="🇫🇷"
               profileImage="/R3X_6040.jpg"
               actionImage="/SYG2932.jpg"
-              palmares={[]}
+              stats={{ discipline: "Recurve Bow", bestScore: "672/720", ranking: "Top 15 France" }}
+              palmares={[
+                "U21 European Champion 2026",
+                "Silver medal at the European Youth Championship (individual), Lilleshall 2022",
+                "Individual Champion at the World Indoor Series, Nîmes 2023",
+                "4th team at the Youth World Championship, Winnipeg 2025",
+                "5th in mixed doubles at World Cup 2, Shanghai 2026",
+                "5th individual and team at the European Senior Championship, Antalya 2026"
+              ]}
               worldRanking={rankings[45361]}
-              isEven={true} />
-            
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Mila Fremery-Delestan is a rising French archer. European Youth Vice-Champion in 2022, winner of the Indoor World Series in Nîmes in 2023, she quickly established herself at the highest international level with several Top 10 finishes in World Cups and at the 2026 European Senior Championships. Her objective is now clear: continue her progression to secure a selection for the 2028 Olympic Games.
+              </p>
+            </AthleteCard>
 
             <AthleteCard
               name="Maia Tincu"

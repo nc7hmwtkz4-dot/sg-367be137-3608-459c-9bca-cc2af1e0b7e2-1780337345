@@ -254,10 +254,10 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               actionImage="/SYG2932.jpg"
               stats={{ discipline: "Arc Classique", bestScore: "672/720", ranking: "Top 15 France" }}
               palmares={[
+                "Championne d'Europe U21 2026",
                 "Médaille d'argent au Championnat d'Europe Jeune (individuel), Lilleshall 2022",
                 "Championne individuelle à la World Indoor Series, Nîmes 2023",
                 "4ème par équipe au Championnat du Monde de la Jeunesse, Winnipeg 2025",
-                "6ème individuelle et par équipe à la World Cup 1, Puebla 2026",
                 "5ème en double mixte à la World Cup 2, Shanghai 2026",
                 "5ème individuelle et par équipe au Championnat d'Europe Senior, Antalya 2026"
               ]}
