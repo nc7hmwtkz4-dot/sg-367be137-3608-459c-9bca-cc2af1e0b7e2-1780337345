@@ -1,6 +1,6 @@
 ---
 title: Réorganisation des athlètes LA 2028
-status: in_progress
+status: done
 priority: high
 type: chore
 tags: [content, la-2028]
