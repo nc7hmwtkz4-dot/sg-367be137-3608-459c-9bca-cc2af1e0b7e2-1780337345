@@ -145,88 +145,6 @@ export default function LosAngeles2028({ rankings }: PageProps) {
             </AthleteCard>
 
             <AthleteCard
-              name="Anaëlle Florent"
-              country="FRA"
-              flag="🇫🇷"
-              profileImage="/IMG_6455.JPG"
-              actionImage="/IMG_6392.JPG"
-              stats={{ discipline: "Compound Bow", bestScore: "701/720" }}
-              palmares={[
-                "5th in mixed doubles at the 2026 European Championships",
-                "4 selections in the 2026 World Cup",
-                "Bronze medal at the Medellin 2022 World Cup (team event, Recurve)",
-                "French D1 Champion (team event) in 2024"
-              ]}
-              worldRanking={rankings[19935]}
-              isEven={false}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                After a remarkable international career in recurve archery, marked by World Cup podiums and Mediterranean Games, Anaëlle made a lightning transition to compound bow. In just a few months, her natural talent and exacting standards opened the doors to the French national team in her new discipline, where she already achieved the best French performance (701 points). A passionate professional coach, she combines the rigor of the highest level with the art of transmission to aim for the Los Angeles 2028 summit.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Thomas Aubert"
-              country="SUI"
-              flag="🇨🇭"
-              profileImage="/DA6_5642-3.jpg"
-              actionImage="/SYG7979.jpg"
-              palmares={[
-                "Bronze medal at the French D1 Championship (team event) 2026",
-                "Silver medal at the French D1 Championship (team event) 2025",
-                "Bronze medal at the Swiss Indoor Championship (mixed doubles) 2026"
-              ]}
-              worldRanking={rankings[5974]}
-              isEven={true}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                After a remarkable first international career, which began in 2006 under the colors of the French national team and then continued from 2015 to 2016 under the Swiss banner with numerous podiums, Thomas devoted nearly a decade to managing international competitions for the World Archery Federation. In 2026, he decided to return to competition with a clear objective: secure Olympic qualification for Switzerland and participate in the Los Angeles 2028 Games.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Franck Eyeni"
-              country="CIV"
-              flag="🇨🇮"
-              profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
-              palmares={[
-                "Gold medal at the 2025 African Championship (individual)",
-                "Silver medal at the 2023 African Championship (mixed team event)",
-                "Silver medal at the 2022 African Championship (individual)",
-                "African recurve bow record (660 points)",
-                "Participation in the 2018 Youth Olympic Games"
-              ]}
-              worldRanking={rankings[20443]}
-              isEven={false}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Major figure in African archery, Franck Eyeni embodies Ivorian sporting excellence on the continental stage. 2025 African Champion in individual, African record holder and multiple medalist at continental championships, he has already tasted the Olympic experience by participating in the 2018 Youth Olympic Games. Trained at Arc Club de Nîmes, he proudly represents Ivory Coast by putting all his precision and mastery with a clear objective: shine in Los Angeles 2028.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Marcelle Diombo"
-              country="CIV"
-              flag="🇨🇮"
-              profileImage="/IMG_6544.JPG"
-              actionImage="/IMG_6515.JPG"
-              stats={{ discipline: "Recurve Bow" }}
-              palmares={[
-                "Gold medal at the 2019 African Games – Individual recurve bow",
-                "Silver medal at the 2019 African Games – Team recurve bow",
-                "Gold medal at the 2022 African Championship – Team recurve bow",
-                "Silver medal at the 2022 African Championship – Mixed team recurve bow",
-                "Silver medal at the 2023 African Championship – Mixed team recurve bow"
-              ]}
-              worldRanking={null}
-              isEven={true}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Born on January 31, 2003 in Toupah, Esmei Anne-Marcelle Diombo has established herself as one of the best archers on the African continent. Recurve bow specialist, she made an impression in 2019 at the African Games in Rabat, where she won the individual gold medal and secured a historic Olympic qualification for Ivory Coast at the Tokyo Games. Recognized for her consistency and mental strength at major events, she has accumulated continental podiums and asserts herself as a major figure in Ivorian archery. True ambassador of African sport, she inspires an entire generation and proudly carries the colors of Ivory Coast with Los Angeles 2028 as her objective.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
               name="Alexis Renaudineau"
               country="FRA"
               flag="🇫🇷"
@@ -304,6 +222,89 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 A young prodigy of French archery, Iban made his mark on the international stage by winning the Youth World Champion title in 2021. Continuing his progression among the national elite, he finished 5th at the Elite French Championship in 2025 before securing the bronze medal at the French D1 Championship team event in 2026. Gifted with immense potential, he now trains with unwavering determination to represent France at the Los Angeles 2028 Olympic Games.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Anaëlle Florent"
+              country="FRA"
+              flag="🇫🇷"
+              profileImage="/IMG_6455.JPG"
+              actionImage="/IMG_6392.JPG"
+              stats={{ discipline: "Compound Bow", bestScore: "701/720" }}
+              palmares={[
+                "5th in mixed doubles at the 2026 European Championships",
+                "4 selections in the 2026 World Cup",
+                "Bronze medal at the Medellin 2022 World Cup (team event, Recurve)",
+                "French D1 Champion (team event) in 2024"
+              ]}
+              worldRanking={rankings[19935]}
+              isEven={false}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                After a remarkable international career in recurve archery, marked by World Cup podiums and Mediterranean Games, Anaëlle made a lightning transition to compound bow. In just a few months, her natural talent and exacting standards opened the doors to the French national team in her new discipline, where she already achieved the best French performance (701 points). A passionate professional coach, she combines the rigor of the highest level with the art of transmission to aim for the Los Angeles 2028 summit.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Thomas Aubert"
+              country="SUI"
+              flag="🇨🇭"
+              profileImage="/DA6_5642-3.jpg"
+              actionImage="/SYG7979.jpg"
+              palmares={[
+                "Bronze medal at the French D1 Championship (team event) 2026",
+                "Silver medal at the French D1 Championship (team event) 2025",
+                "Bronze medal at the Swiss Indoor Championship (mixed doubles) 2026"
+              ]}
+              worldRanking={rankings[5974]}
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                After a remarkable first international career, which began in 2006 under the colors of the French national team and then continued from 2015 to 2016 under the Swiss banner with numerous podiums, Thomas devoted nearly a decade to managing international competitions for the World Archery Federation. In 2026, he decided to return to competition with a clear objective: secure Olympic qualification for Switzerland and participate in the Los Angeles 2028 Games.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Franck Eyeni"
+              country="CIV"
+              flag="🇨🇮"
+              profileImage="/64b3ea82-8d84-4e68-83e5-6d285ee2b2f0.JPG"
+              actionImage="/IMG_6332.JPG"
+              palmares={[
+                "Gold medal at the 2025 African Championship (individual)",
+                "Silver medal at the 2023 African Championship (mixed team event)",
+                "Silver medal at the 2022 African Championship (individual)",
+                "African recurve bow record (660 points)",
+                "Participation in the 2018 Youth Olympic Games"
+              ]}
+              worldRanking={rankings[20443]}
+              isEven={false}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                From Aboisso in Ivory Coast, Franck Eyeni embodies perseverance and ambition. In his quest for qualification to the Paris 2024 Olympic Games, he made the bold choice to leave his native country to join Arc Club de Nîmes, a major European archery institution. Although he narrowly missed Olympic selection for Paris, this foundational experience forged in him a strong mindset. Driven by unwavering determination, Franck chose to settle permanently in France to combine higher education and high-level sport. Recently crowned with gold on the African continent in 2025 and current holder of the African record, he now deploys all his precision and mastery with a clear objective: qualification for the Los Angeles 2028 Olympic Games.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Marcelle Diombo"
+              country="CIV"
+              flag="🇨🇮"
+              profileImage="/IMG_6544.JPG"
+              actionImage="/IMG_6515.JPG"
+              stats={{ discipline: "Recurve Bow" }}
+              palmares={[
+                "Gold medal at the 2019 African Games – Individual recurve bow",
+                "Silver medal at the 2019 African Games – Team recurve bow",
+                "Gold medal at the 2022 African Championship – Team recurve bow",
+                "Silver medal at the 2022 African Championship – Mixed team recurve bow",
+                "Silver medal at the 2023 African Championship – Mixed team recurve bow"
+              ]}
+              worldRanking={null}
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Born on January 31, 2003 in Toupah, Esmei Anne-Marcelle Diombo has established herself as one of the best archers on the African continent. Recurve bow specialist, she made an impression in 2019 at the African Games in Rabat, where she won the individual gold medal and secured a historic Olympic qualification for Ivory Coast at the Tokyo Games. Recognized for her consistency and mental strength at major events, she has accumulated continental podiums and asserts herself as a major figure in Ivorian archery. True ambassador of African sport, she inspires an entire generation and proudly carries the colors of Ivory Coast with Los Angeles 2028 as her objective.
               </p>
             </AthleteCard>
             

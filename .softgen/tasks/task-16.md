@@ -10,6 +10,6 @@ Le client a demandé une réorganisation stricte de l'ordre d'affichage des athl
 **Contrainte absolue** : Aucun texte (y compris les biographies passées en `children`), aucune propriété et aucune photo ne doivent être modifiés. Il s'agit d'un simple déplacement des blocs JSX existants.
 
 ## Checklist
-- [ ] Dans le fichier `src/pages/los-angeles-2028.tsx`, réordonner les composants `AthleteCard` pour respecter cet ordre exact : Baptiste Addis, Victoria Sebastian, Jean Charles Valladont, Alexis Renaudineau, Mila Fremery Delestan, Maia Tincu, Iban Bariteaud, Anaelle Florent, Thomas Aubert, Franck Eyeni, Marcelle Diombo.
-- [ ] Dans le fichier `src/pages/en/los-angeles-2028.tsx`, appliquer exactement le même ordre de tri pour les composants `AthleteCard`.
-- [ ] Vérifier visuellement dans le code qu'aucune donnée de contenu (nom, pays, images, texte biographique, palmarès) n'a été altérée pendant la manipulation.
+- [x] Dans le fichier `src/pages/los-angeles-2028.tsx`, réordonner les composants `AthleteCard` pour respecter cet ordre exact : Baptiste Addis, Victoria Sebastian, Jean Charles Valladont, Alexis Renaudineau, Mila Fremery Delestan, Maia Tincu, Iban Bariteaud, Anaelle Florent, Thomas Aubert, Franck Eyeni, Marcelle Diombo.
+- [x] Dans le fichier `src/pages/en/los-angeles-2028.tsx`, appliquer exactement le même ordre de tri pour les composants `AthleteCard`.
+- [x] Vérifier visuellement dans le code qu'aucune donnée de contenu (nom, pays, images, texte biographique, palmarès) n'a été altérée pendant la manipulation.

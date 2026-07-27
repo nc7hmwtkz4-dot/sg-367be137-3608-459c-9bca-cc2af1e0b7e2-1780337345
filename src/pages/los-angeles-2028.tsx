@@ -145,6 +145,87 @@ export default function LosAngeles2028({ rankings }: PageProps) {
             </AthleteCard>
 
             <AthleteCard
+              name="Alexis Renaudineau"
+              country="FRA"
+              flag="🇫🇷"
+              profileImage="/IMG_6321_copy.jpg"
+              actionImage="/YWC23_R3X_3247.jpg"
+              palmares={[
+                "Champion de la Youth Cup de Ruse (BUL) 2026",
+                "Champion d'Europe par équipe 2024",
+                "Champion du monde jeune par équipe 2023"
+              ]}
+              worldRanking={rankings[46647]}
+              isEven={false}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune tout en intégrant l'équipe de France senior dès 2026, une performance pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
+
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Mila Fremery-Delestan"
+              country="FRA"
+              flag="🇫🇷"
+              profileImage="/R3X_6040.jpg"
+              actionImage="/SYG2932.jpg"
+              stats={{ discipline: "Arc Classique", bestScore: "672/720", ranking: "Top 15 France" }}
+              palmares={[
+                "Championne d'Europe U21 2026",
+                "Médaille d'argent au Championnat d'Europe Jeune (individuel), Lilleshall 2022",
+                "Championne individuelle à la World Indoor Series, Nîmes 2023",
+                "4ème par équipe au Championnat du Monde de la Jeunesse, Winnipeg 2025",
+                "5ème en double mixte à la World Cup 2, Shanghai 2026",
+                "5ème individuelle et par équipe au Championnat d'Europe Senior, Antalya 2026"
+              ]}
+              worldRanking={rankings[45361]}
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Mila Fremery-Delestan est une archère française en pleine ascension. Vice-championne d'Europe jeune en 2022, vainqueure de l'Indoor World Series à Nîmes en 2023, elle s'est rapidement imposée au plus haut niveau international avec plusieurs Top 10 en Coupe du monde et aux Championnats d'Europe seniors en 2026. Son objectif est désormais clair : poursuivre sa progression pour décrocher une sélection aux Jeux olympiques de 2028.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Maia Tincu"
+              country="FRA"
+              flag="🇫🇷"
+              profileImage="/WhatsApp_Image_2026-06-22_at_14.52.12.jpeg"
+              actionImage="/WhatsApp_Image_2026-06-21_at_14.18.31.jpeg"
+              palmares={[
+                "Championne de France par équipes 2026",
+                "Championne de France Élite en double mixte 2025 (avec Jean-Charles Valladont)",
+                "Double championne d'Europe U21 en 2024 (mixte et équipe femme)",
+                "Médaille de bronze par équipe en Grand Prix européen senior"
+              ]}
+              worldRanking={rankings[43740]}
+              isEven={false}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Membre du pôle France relève de Bordeaux depuis 2022, Maia s'est imposée comme l'une des révélations du tir à l'arc français. Invincible en Junior Cup européenne depuis 2023 et accumulant les médailles nationales en U18 et U21, elle a marqué les esprits avec son doublé de championne d'Europe Junior 2024. Désormais tournée vers l'équipe de France senior, elle affiche une ambition claire : intégrer l'élite européenne et mondiale pour viser Los Angeles 2028.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
+              name="Iban Bariteaud"
+              country="FRA"
+              flag="🇫🇷"
+              profileImage="/IMG_6366.JPG"
+              actionImage="/IMG_6292.JPG"
+              palmares={[
+                "Médaille de bronze au Championnat de France D1 par équipes 2026",
+                "5e du Championnat de France élite 2025",
+                "Champion du Monde U18 en 2021"
+              ]}
+              worldRanking={rankings[41671]}
+              isEven={true}>
+              
+              <p className="text-muted-foreground italic text-sm leading-relaxed">
+                Jeune prodige du tir à l'arc français, Iban s'est révélé sur la scène internationale en décrochant le titre de Champion du Monde jeune en 2021. Poursuivant sa progression parmi l'élite nationale, il s'est classé 5e du Championnat de France élite en 2025 avant de remporter la médaille de bronze au Championnat de France D1 par équipes en 2026 avec son club. Doté d'un immense potentiel, il s'entraîne désormais avec une détermination sans faille pour représenter la France aux Jeux Olympiques de Los Angeles 2028.
+              </p>
+            </AthleteCard>
+
+            <AthleteCard
               name="Anaëlle Florent"
               country="FRA"
               flag="🇫🇷"
@@ -224,87 +305,6 @@ export default function LosAngeles2028({ rankings }: PageProps) {
               
               <p className="text-muted-foreground italic text-sm leading-relaxed">
                 Née le 31 janvier 2003 à Toupah, Esmei Anne-Marcelle Diombo s'est imposée comme l'une des meilleures archères du continent africain. Spécialiste de l'arc classique, elle a marqué les esprits en 2019 aux Jeux Africains de Rabat, où elle remporte la médaille d'or individuelle et décroche une qualification olympique historique pour la Côte d'Ivoire aux Jeux de Tokyo. Reconnue pour sa régularité et son mental d'acier lors des grands rendez-vous, elle multiplie les podiums continentaux et s'affirme comme une figure majeure du tir à l'arc ivoirien. Véritable ambassadrice du sport africain, elle inspire toute une génération et porte fièrement les couleurs de la Côte d'Ivoire avec pour objectif Los Angeles 2028.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Alexis Renaudineau"
-              country="FRA"
-              flag="🇫🇷"
-              profileImage="/IMG_6321_copy.jpg"
-              actionImage="/YWC23_R3X_3247.jpg"
-              palmares={[
-                "Champion de la Youth Cup de Ruse (BUL) 2026",
-                "Champion d'Europe par équipe 2024",
-                "Champion du monde jeune par équipe 2023"
-              ]}
-              worldRanking={rankings[46647]}
-              isEven={false}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">Prodige du tir à l'arc français, Alexis cumule les médailles d'or internationales en catégorie jeune tout en intégrant l'équipe de France senior dès 2026, une performance pour un athlète encore junior. Cette double casquette témoigne d'un talent exceptionnel et d'une maturité technique qui le positionnent déjà comme un sérieux prétendant à la sélection olympique pour Los Angeles 2028.
-
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Mila Fremery-Delestan"
-              country="FRA"
-              flag="🇫🇷"
-              profileImage="/R3X_6040.jpg"
-              actionImage="/SYG2932.jpg"
-              stats={{ discipline: "Arc Classique", bestScore: "672/720", ranking: "Top 15 France" }}
-              palmares={[
-                "Championne d'Europe U21 2026",
-                "Médaille d'argent au Championnat d'Europe Jeune (individuel), Lilleshall 2022",
-                "Championne individuelle à la World Indoor Series, Nîmes 2023",
-                "4ème par équipe au Championnat du Monde de la Jeunesse, Winnipeg 2025",
-                "5ème en double mixte à la World Cup 2, Shanghai 2026",
-                "5ème individuelle et par équipe au Championnat d'Europe Senior, Antalya 2026"
-              ]}
-              worldRanking={rankings[45361]}
-              isEven={true}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Mila Fremery-Delestan est une archère française en pleine ascension. Vice-championne d'Europe jeune en 2022, vainqueure de l'Indoor World Series à Nîmes en 2023, elle s'est rapidement imposée au plus haut niveau international avec plusieurs Top 10 en Coupe du monde et aux Championnats d'Europe seniors en 2026. Son objectif est désormais clair : poursuivre sa progression pour décrocher une sélection aux Jeux olympiques de 2028.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Maia Tincu"
-              country="FRA"
-              flag="🇫🇷"
-              profileImage="/WhatsApp_Image_2026-06-22_at_14.52.12.jpeg"
-              actionImage="/WhatsApp_Image_2026-06-21_at_14.18.31.jpeg"
-              palmares={[
-                "Championne de France par équipes 2026",
-                "Championne de France Élite en double mixte 2025 (avec Jean-Charles Valladont)",
-                "Double championne d'Europe U21 en 2024 (mixte et équipe femme)",
-                "Médaille de bronze par équipe en Grand Prix européen senior"
-              ]}
-              worldRanking={rankings[43740]}
-              isEven={false}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Membre du pôle France relève de Bordeaux depuis 2022, Maia s'est imposée comme l'une des révélations du tir à l'arc français. Invincible en Junior Cup européenne depuis 2023 et accumulant les médailles nationales en U18 et U21, elle a marqué les esprits avec son doublé de championne d'Europe Junior 2024. Désormais tournée vers l'équipe de France senior, elle affiche une ambition claire : intégrer l'élite européenne et mondiale pour viser Los Angeles 2028.
-              </p>
-            </AthleteCard>
-
-            <AthleteCard
-              name="Iban Bariteaud"
-              country="FRA"
-              flag="🇫🇷"
-              profileImage="/IMG_6366.JPG"
-              actionImage="/IMG_6292.JPG"
-              palmares={[
-                "Médaille de bronze au Championnat de France D1 par équipes 2026",
-                "5e du Championnat de France élite 2025",
-                "Champion du Monde U18 en 2021"
-              ]}
-              worldRanking={rankings[41671]}
-              isEven={true}>
-              
-              <p className="text-muted-foreground italic text-sm leading-relaxed">
-                Jeune prodige du tir à l'arc français, Iban s'est révélé sur la scène internationale en décrochant le titre de Champion du Monde jeune en 2021. Poursuivant sa progression parmi l'élite nationale, il s'est classé 5e du Championnat de France élite en 2025 avant de remporter la médaille de bronze au Championnat de France D1 par équipes en 2026 avec son club. Doté d'un immense potentiel, il s'entraîne désormais avec une détermination sans faille pour représenter la France aux Jeux Olympiques de Los Angeles 2028.
               </p>
             </AthleteCard>
             
