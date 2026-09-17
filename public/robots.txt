@@ -6,15 +6,16 @@ User-agent: *
 Allow: /
 
 # Sitemap principal
-Sitemap: https://arcclub-nimes.fr/sitemap.xml
+Sitemap: https://arcclubnimes-partenaires.fr/sitemap.xml
 
-# Optimisations spécifiques pour les principaux moteurs
+# Robots spécifiques Google
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
 
+# Bing
 User-agent: Bingbot
 Allow: /
 
