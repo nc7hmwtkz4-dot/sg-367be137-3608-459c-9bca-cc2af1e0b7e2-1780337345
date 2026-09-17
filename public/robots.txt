@@ -1,0 +1,22 @@
+# robots.txt pour Arc Club Nîmes
+# Optimisé pour le référencement Google
+
+# Autoriser tous les robots d'exploration
+User-agent: *
+Allow: /
+
+# Sitemap principal
+Sitemap: https://arcclub-nimes.fr/sitemap.xml
+
+# Optimisations spécifiques pour les principaux moteurs
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawler delay pour éviter la surcharge serveur (optionnel)
+Crawl-delay: 1

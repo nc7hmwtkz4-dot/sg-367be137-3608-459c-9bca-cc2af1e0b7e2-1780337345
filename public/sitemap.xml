@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Page d'accueil française -->
+  <url>
+    <loc>https://arcclub-nimes.fr/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arcclub-nimes.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://arcclub-nimes.fr/en" />
+  </url>
+  
+  <!-- Page d'accueil anglaise -->
+  <url>
+    <loc>https://arcclub-nimes.fr/en</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arcclub-nimes.fr/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arcclub-nimes.fr/" />
+  </url>
+  
+  <!-- Page LA 2028 française -->
+  <url>
+    <loc>https://arcclub-nimes.fr/los-angeles-2028</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arcclub-nimes.fr/los-angeles-2028" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://arcclub-nimes.fr/en/los-angeles-2028" />
+  </url>
+  
+  <!-- Page LA 2028 anglaise -->
+  <url>
+    <loc>https://arcclub-nimes.fr/en/los-angeles-2028</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arcclub-nimes.fr/en/los-angeles-2028" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://arcclub-nimes.fr/los-angeles-2028" />
+  </url>
+
+</urlset>
