@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <!-- Page d'accueil française -->
   <url>
     <loc>https://arcclubnimes-partenaires.fr/</loc>
@@ -22,7 +22,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://arcclubnimes-partenaires.fr/" />
   </url>
 
-  <!-- Page Projet Los Angeles 2028 (français) -->
+  <!-- Page LA 2028 française -->
   <url>
     <loc>https://arcclubnimes-partenaires.fr/los-angeles-2028</loc>
     <lastmod>2026-09-17</lastmod>
@@ -32,7 +32,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://arcclubnimes-partenaires.fr/los-angeles-2028" />
   </url>
 
-  <!-- Page Projet Los Angeles 2028 (anglais) -->
+  <!-- Page LA 2028 anglaise -->
   <url>
     <loc>https://arcclubnimes-partenaires.fr/en/los-angeles-2028</loc>
     <lastmod>2026-09-17</lastmod>
